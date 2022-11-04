@@ -1,0 +1,44 @@
+
+Statut du p‚riph‚rique LPT1:
+----------------------------
+    La sortie imprimante n'est pas redirig‚e.
+
+
+Statut du p‚riph‚rique COM1:
+----------------------------
+    Baudÿ:            9600
+    Parit‚ÿ:          None
+    Bits de donn‚esÿ: 8
+    Bits d'arrˆtÿ:    1
+    Temporisationÿ:   OFF
+    XON/XOFFÿ:        OFF
+    Protocole CTSÿ:   OFF
+    Protocole DSRÿ:   OFF
+    Sensibilit‚ DSRÿ: OFF
+    Circuit DTRÿ:     ON
+    Circuit RTSÿ:     ON
+
+
+Statut du p‚riph‚rique COM3:
+----------------------------
+    Baudÿ:            9600
+    Parit‚ÿ:          None
+    Bits de donn‚esÿ: 8
+    Bits d'arrˆtÿ:    1
+    Temporisationÿ:   OFF
+    XON/XOFFÿ:        OFF
+    Protocole CTSÿ:   OFF
+    Protocole DSRÿ:   OFF
+    Sensibilit‚ DSRÿ: OFF
+    Circuit DTRÿ:     ON
+    Circuit RTSÿ:     ON
+
+
+Statut du p‚riph‚rique CON:
+---------------------------
+    Lignesÿ:          300
+    Colonnesÿ:        80
+    Vitesse clavierÿ: 31
+    D‚lai clavierÿ:   1
+    Page de codesÿ:   850
+

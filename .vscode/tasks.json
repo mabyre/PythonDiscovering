@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "command": "C:\\Users\\Mabyre\\AppData\\Local\\Programs\\Python\\Python39\\python",
+    "args": [
+        "app.py"
+    ],
+    "problemMatcher": {
+        "fileLocation": [
+            "relative",
+            "${workspaceRoot}"
+        ],
+        "pattern": {
+            "regexp": "^(.*)+s$",
+            "message": 1
+        }
+    }
+}
