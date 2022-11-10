@@ -1,3 +1,5 @@
+[Syntaxe Markdown](https://www.christopheducamp.com/2014/09/18/love-markdown/)
+
 ## *** tkinterDialogBox
 
 open a dialog box with tinker
@@ -6,7 +8,7 @@ with file user choice
 ## *** get-pip.py
 
 allows to install the PIP package installer in the directory
-\\Users\UserName\AppData\Local\Programs\Python\Python38\Scripts
+\\\Users\UserName\AppData\Local\Programs\Python\Python38\Scripts
 put it in the path
 
 ## *** matPlotSample.py
