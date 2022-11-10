@@ -2,7 +2,7 @@
 #!/usr/bin/env python3
 #
 # Ajouter au path systeme - Ne fonctionne pas ... oui cela ajoute au path mais
-# uniquement pour le programme en cours d'exécution
+# uniquement pour le programme en cours d'exÃ©cution
 # ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== =====
 
 """ 

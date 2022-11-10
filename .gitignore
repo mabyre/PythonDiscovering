@@ -1,3 +1,4 @@
 ﻿*.msi
 *.tar
 install/
+module/__pycache__/

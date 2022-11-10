@@ -1,4 +1,4 @@
-# on importe le module des expressions régulières
+# import du module des expressions régulières
 import re
 
 # --------------------------------------------------------------------------
