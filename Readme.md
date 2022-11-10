@@ -1,5 +1,7 @@
 [Syntaxe Markdown](https://www.christopheducamp.com/2014/09/18/love-markdown/)
 
+As the name says, it's to discover python language. You have a documentation **Découvrir-python.odt** in french only aim is not to be a sum, but to discover or retreive most quickly your mark in **python**
+
 ## *** tkinterDialogBox
 
 open a dialog box with tinker
@@ -34,3 +36,9 @@ example used in document Découvrir-python (french only)
 ## *** useShape.py
 
 demonstrate how to create modular function declared in directory **module**
+
+## *** useVector.py
+
+the use of Vector class defined in \\\module\Vector.py file
+
+Hope you enjoy as I do!
