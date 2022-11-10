@@ -41,4 +41,9 @@ demonstrate how to create modular function declared in directory **module**
 
 the use of Vector class defined in \\\module\Vector.py file
 
-Hope you enjoy as I do!
+**Hope you enjoy as I do!**
+
+## My best python references
+
+* <https://python-course.eu/>
+  * very conmpleted cours in python
