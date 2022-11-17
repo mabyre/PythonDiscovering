@@ -1,16 +1,25 @@
 #
 #
-# https: // pythonprogramming.net/fill-pruning-matplotlib-tutorial/
+# https://pythonprogramming.net/fill-pruning-matplotlib-tutorial/
 #
-# petit souci avec le module matplotlib.finance déprécié... bla bla bla
+# - petit souci avec le module matplotlib.finance déprécié... bla bla bla
+#   install mplfinace ...
 #
+# stock_price_url = https://chartapi.finance.yahoo.com/instrument/1.0/EBAY/chartdata;type=quote;range=1y/csv
+# https://finance.yahoo.com/instrument/1.0/EBAY/chartdata;type=quote;range=1y/csv
+#
+# Site inaccessible !!! trop vieux ce truc
+#
+# GRRRR !!!
 #
 
 import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import matplotlib.ticker as mticker
-#from matplotlib.finance import candlestick_ohlc
+from mplfinance.original_flavor import candlestick_ohlc
+#from mpl_finance import candlestick_ohlc
+#from matplotlib.mplfinance import candlestick_ohlc
 from matplotlib import style
 
 import numpy as np
@@ -88,8 +97,8 @@ def graph_data(stock):
 
     ax1.plot_date(date, h_l, '-')
 
-    (ax2, ohlc, width=0.4,
-     colorup='#77d879', colordown='#db3f3f')
+    candlestick_ohlc(ax2, ohlc, width=0.4,
+                     colorup='#77d879', colordown='#db3f3f')
 
     for label in ax2.xaxis.get_ticklabels():
         label.set_rotation(45)

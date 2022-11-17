@@ -45,5 +45,9 @@ the use of Vector class defined in \\\module\Vector.py file
 
 ## My best python references
 
+* <https://docs.python.org/fr/3/index.html>
+
+  * reference site python
+
 * <https://python-course.eu/>
   * very conmpleted cours in python
