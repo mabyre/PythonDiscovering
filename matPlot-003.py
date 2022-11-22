@@ -1,5 +1,4 @@
 #
-#
 # https://pythonprogramming.net/fill-pruning-matplotlib-tutorial/
 #
 # - petit souci avec le module matplotlib.finance déprécié... bla bla bla
@@ -11,6 +10,10 @@
 # Site inaccessible !!! trop vieux ce truc
 #
 # GRRRR !!!
+#
+# La nouvelle façon de faire serait ici :
+#
+# https://github.com/c0redumb/yahoo_quote_download
 #
 
 import matplotlib
@@ -65,7 +68,7 @@ def graph_data(stock):
     ax3 = plt.subplot2grid((6, 1), (5, 0), rowspan=1, colspan=1)
 
     stock_price_url = 'http://chartapi.finance.yahoo.com/instrument/1.0/' + \
-        stock+'/chartdata;type=quote;range=1y/csv'
+        stock + '/chartdata;type=quote;range=1y/csv'
     source_code = urllib.request.urlopen(stock_price_url).read().decode()
     stock_data = []
     split_source = source_code.split('\n')
