@@ -15,7 +15,7 @@ put it in the path
 
 ## *** matplot-004.py
 
-using candlestick_ohlc updated to display finaclial graphic
+use of **candlestick_ohlc** updated to display financial graphics using matplot and mplfinance.original_flavor
 
 <img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matplotlib-valneva-finace.png" alt="Finance graph with mplfinance" height="250" />
 
