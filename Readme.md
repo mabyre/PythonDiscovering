@@ -51,3 +51,9 @@ the use of Vector class defined in \\\module\Vector.py file
 
 * <https://python-course.eu/>
   * very conmpleted cours in python
+
+## Python's Library 
+
+* <https://matplotlib.org/>
+  * one of the best display library ever, many samples, everything  you need
+  
