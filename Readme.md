@@ -1,4 +1,4 @@
-[Syntaxe Markdown](https://www.christopheducamp.com/2014/09/18/love-markdown/)
+[Syntaxe Markdown](https://www.markdownguide.org/basic-syntax/)
 
 As the name says, it's to discover python language. You have a documentation **Découvrir-python.odt** in french only aim is not to be a sum, but to discover or retreive most quickly your mark in **python**
 
