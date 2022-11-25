@@ -13,6 +13,12 @@ allows to install the PIP package installer in the directory
 \\\Users\UserName\AppData\Local\Programs\Python\Python38\Scripts
 put it in the path
 
+## *** matplot-004.py
+
+using candlestick_ohlc updated to display finaclial graphic
+
+(https://github.com/mabyre/PythonDiscovering/blob/master/images/matplotlib-valneva-inace.png)
+
 ## *** matPlotSample.py
 
 use the librairy matplotlib.pyplot inspired from MATLAB
@@ -52,7 +58,7 @@ the use of Vector class defined in \\\module\Vector.py file
 * <https://python-course.eu/>
   * very conmpleted cours in python
 
-## Python's Library 
+## Python's Library
 
 * <https://matplotlib.org/>
   * one of the best display library ever, many samples, everything  you need
