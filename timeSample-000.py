@@ -1,7 +1,7 @@
 #
 # It is useful to measure time
 #
-# https: // www.geeksforgeeks.org/how-to-measure-elapsed-time-in-python/
+# https://www.geeksforgeeks.org/how-to-measure-elapsed-time-in-python/
 #
 # it's quite easy to mesure time in python
 #
