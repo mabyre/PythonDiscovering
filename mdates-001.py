@@ -3,6 +3,10 @@
 # usualy mdates is declared like this
 # import matplotlib.dates as mdates
 #
+# PAY ATTENTION :
+# A very important thing is to remark that in datestr2num function
+# strptime mask is different from strftime mask
+#
 from datetime import datetime
 import matplotlib.pyplot as plt
 from matplotlib.dates import (
