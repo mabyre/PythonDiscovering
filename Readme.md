@@ -64,4 +64,6 @@ the use of Vector class defined in \\\module\Vector.py file
 
 * <https://matplotlib.org/>
   * one of the best display library ever, many samples, everything  you need
-  
+
+* <https://numpy.org/doc/stable/>
+  * fundamental package for scientific computing in Python
