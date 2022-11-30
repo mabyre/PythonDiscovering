@@ -12,7 +12,6 @@ import matplotlib.pyplot as plt
 from matplotlib.dates import (
     DateFormatter,
     AutoDateLocator,
-    AutoDateFormatter,
     datestr2num
 )
 

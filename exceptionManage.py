@@ -1,29 +1,37 @@
-'''
-https://www.programiz.com/python-programming/exception-handling
-'''
-
+#
 # import module sys to get the type of exception
+#
 import sys
 
 randomList = ['a', 0, 2]
 
 for entry in randomList:
     try:
+        # do something
         print("The entry is", entry)
         r = 1/int(entry)
         break
 
+    # except ZeroDivisionError:
+    #     # handle an exception
+    #     print("Exception: ZeroDivisionError !")
+    #     pass
+
     # except (TypeError, ZeroDivisionError):
+    #     # handle multiple exceptions
     #     print(TypeError)
     #     print("TypeError: ZeroDivisionError !")
-
-    # except ZeroDivisionError:
-    #     print("Exception: ZeroDivisionError !")
+    #     pass
 
     except Exception as e:
         print("Oops!", e.__class__, "occurred.")
         print("Next entry.")
         print()
+        pass
+
+    except:
+        # handle all other exceptions
+        pass
 
 print("The reciprocal of", entry, "is", r)
 
