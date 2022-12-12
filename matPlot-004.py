@@ -23,10 +23,14 @@ print(plt.style.available)
 
 print(plt.__file__)
 
+# Should be choosen inside signal, means less than over the end
 MA1 = 10
 MA2 = 30
-
 filename = r'.\datas\VALNEVA_2022-11-24.txt'
+
+# MA1 = 5
+# MA2 = 15
+# filename = r'.\datas\CARMAT_2022-12-12.txt'
 
 
 def moving_average(values, window):
@@ -69,9 +73,11 @@ def graph_data(stock):
     #     stock + '/chartdata;type=quote;range=1y/csv'
     # source_code = urllib.request.urlopen(stock_price_url).read().decode()
 
+    # Colums you'll find in file
+    #
     date, openp, highp, lowp, closep, volume = numpy.loadtxt(filename,
                                                              delimiter='\t',
-                                                             skiprows=1,
+                                                             skiprows=1,  # first line is column's names
                                                              unpack=True,
                                                              usecols=(
                                                                  0, 1, 2, 3, 4, 5),
@@ -81,8 +87,10 @@ def graph_data(stock):
     y = len(date)
     y1 = len(openp)
 
-    ohlc = []
+    assert y == y1, "Error in reading file"
 
+    # Let's create OHLC
+    ohlc = []
     while x < y:
         append_me = date[x], openp[x], highp[x], lowp[x], closep[x], volume[x]
         ohlc.append(append_me)
