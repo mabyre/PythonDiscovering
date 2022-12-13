@@ -81,11 +81,10 @@ date, openp, highp, lowp, closep, volume = numpy.loadtxt(filename,
                                                              0, 1, 2, 3, 4, 5),
                                                          converters={0: bytespdate2num('%d/%m/%Y %H:%M')})
 
-x = 0
-y = len(date)
-y1 = len(openp)
+y = len(openp)
+print(f'signal weight: {y}')
 
-assert y == y1, "Error in reading file"
+assert len(date) == y, "Error in reading file"
 
 # Prepare data
 # ------------
@@ -99,7 +98,7 @@ prediction_days = 10
 x_train = []
 y_train = []
 
-# we are counting from the prediction_days_th index to the last index
+# we are counting from the prediction_days'th index to the last index
 for x in range(prediction_days, len(scaled_data)):
     x_train.append(scaled_data[x-prediction_days:x, 0])
     y_train.append(scaled_data[x, 0])
@@ -111,8 +110,7 @@ x_train = numpy.reshape(x_train, (x_train.shape[0], x_train.shape[1], 1))
 # ---------------
 model = Sequential()
 # specify the layer
-model.add(LSTM(units=50, return_sequences=True,
-          input_shape=(x_train.shape[1], 1)))
+model.add(LSTM(units=50, return_sequences=True, input_shape=(x_train.shape[1], 1)))
 model.add(Dropout(0.2))
 model.add(LSTM(units=50, return_sequences=True))
 model.add(Dropout(0.2))
@@ -127,13 +125,12 @@ model.compile(optimizer='adam', loss='mean_squared_error')
 model.fit(x_train, y_train, epochs=25, batch_size=32)
 
 # Test model
-#
+# ----------
 test_closep = pandas.Series(closep)
 actual_prices = test_closep
 total_dataset = pandas.concat((test_closep, test_closep), axis=0)
 
-model_input = total_dataset[len(
-    total_dataset) - len(test_closep) - prediction_days:].values
+model_input = total_dataset[len(total_dataset) - len(test_closep) - prediction_days:].values
 # reshaping the model
 model_input = model_input.reshape(-1, 1)
 # scaling down the model
@@ -152,9 +149,9 @@ predicted_price = model.predict(x_test)
 predicted_price = scaler.inverse_transform(predicted_price)
 
 # plot the test Predictions
-plt.plot(actual_prices, color="black", label=f"Actual{COMPAGNY} price")
+plt.plot(actual_prices, color='midnightblue', label=f"Actual {COMPAGNY} price")
 plt.plot(predicted_price, color='green', label=f"Predicted {COMPAGNY} Price")
-plt.title(f"{COMPAGNY} Share price")
+plt.title(f"{COMPAGNY} share price")
 plt.xlabel('Time')
 plt.ylabel(f'{COMPAGNY} share price')
 plt.legend
