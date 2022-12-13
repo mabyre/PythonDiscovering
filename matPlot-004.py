@@ -4,6 +4,8 @@
 # Very tuff sample to updated, many problems to solve in compare to the original
 # After had solved many problems it works
 #
+# Aim is to use candlestick_ohlc to plot a candle stick graph
+#
 # Chez boursorama dans le grapqhique du cours de l'action, il y a un bouton télécharger.
 #
 #
@@ -20,7 +22,6 @@ import datetime as dt
 
 style.use('fivethirtyeight')
 print(plt.style.available)
-
 print(plt.__file__)
 
 # Should be choosen inside signal, means less than over the end
@@ -154,3 +155,5 @@ def graph_data(stock):
 
 
 graph_data('VALNEVA')
+
+print('Program ending...')
