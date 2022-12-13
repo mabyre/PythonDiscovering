@@ -17,7 +17,8 @@ put it in the path
 
 try data scientist model on linear series ... using pandas, sklearn, tensorflow, keras
 
-<img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matplotlib-005.png" alt="Finance graph with mplfinance" height="250" />
+<img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matplotlib-005.png" alt="Using keras data scientist model" height="250" />
+
 ## *** matplot-004.py
 
 use of **candlestick_ohlc** updated to display financial graphics using matplot and mplfinance.original_flavor
@@ -28,7 +29,7 @@ use of **candlestick_ohlc** updated to display financial graphics using matplot 
 
 use the boursorama data file to display only a graph, show how to use date on x axe
 
-<img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matPlot-003.png" alt="Finance graph with mplfinance" height="250" />
+<img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matPlot-003.png" alt="using datestr2num converter" height="250" />
 
 ## *** matPlotSample.py
 
