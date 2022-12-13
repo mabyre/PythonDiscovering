@@ -1,28 +1,29 @@
 #
-# matPlot-0xx series will lead us to preditive of linear series
+# matPlot-0xx series will lead us to predictive of linear series
 #
-# Chez boursorama dans le grapqhique du cours de l'action, il y a un bouton télécharger.
-#
-# https://pythonprogramming.net/fill-pruning-matplotlib-tutorial/
-#
-# https://geekyhumans.com/fr/prediction-boursiere-avec-python/
+# Chez boursorama dans le grapqhique du cours de l'action, il y a un bouton télécharger
+# pour exporter les données au format .txt séparées par un \t
 #
 # https://www.geeksforgeeks.org/convert-a-numpy-array-to-a-pandas-series/
 # Convert a NumPy array to a Pandas series
 #
+# https://geekyhumans.com/how-to-predict-us-stock-price-using-python/
 # https://geekyhumans.com/fr/prediction-boursiere-avec-python/
 # Prédiction boursière avec Python
 #
+# https://clemovernet.wordpress.com/2020/01/01/tensorflow-2-prediction-dun-cours-de-bourse-version-simple/
+# Some other example of using keras.models.Sequential
+#
 # https://github.com/JosueAfouda/Analyse-quantitative/blob/master/Prediction%20du%20prix%20des%20actions.ipynb
 #
+# https://matplotlib.org/stable/gallery/color/named_colors.html#css-colors
+# Get nice colors for graph
 #
 from datetime import datetime
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import matplotlib.ticker as mticker
 import numpy
-import urllib
-import datetime as dt
 import pandas
 
 from matplotlib import style
@@ -49,17 +50,6 @@ MA2 = 15
 filename = r'.\datas\CARMAT_2022-12-12.txt'
 
 COMPAGNY = 'CARMAT'
-
-
-def moving_average(values, window):
-    weights = numpy.repeat(1.0, window)/window
-    asa_values = numpy.asarray(values, dtype=float)
-    smas = numpy.convolve(asa_values, weights, 'valid')
-    return smas
-
-
-def high_minus_low(highs, lows):
-    return highs-lows
 
 
 def bytespdate2num(fmt, encoding='utf-8'):
@@ -157,9 +147,24 @@ plt.ylabel(f'{COMPAGNY} share price')
 plt.legend
 plt.show()
 
-# Print prediction
-# ----------------
-# real_data = numpy.array(closep)
-# prediction = model.predict(real_data)
-# prediction = scaler.inverse_transform(prediction)
-# print(f"Prediction: {prediction}")
+# Predict data for tomorrow using real data
+#
+all_days = len(closep)
+real_data = []
+for x in range(0, all_days):
+    real_data.append(closep[x])
+
+real_data = numpy.array(real_data)
+real_data = numpy.reshape(real_data, (all_days, 0, 1))
+
+prediction = model.predict(real_data)
+prediction = scaler.inverse_transform(prediction)
+
+# Plot the Predictions
+plt.plot(actual_prices, color='midnightblue', label=f"Actual {COMPAGNY} price")
+plt.plot(prediction, color='green', label=f"Predicted {COMPAGNY} Price")
+plt.title(f"{COMPAGNY} share price")
+plt.xlabel('Time')
+plt.ylabel(f'{COMPAGNY} share price')
+plt.legend
+plt.show()
