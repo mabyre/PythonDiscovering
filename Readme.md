@@ -13,11 +13,22 @@ allows to install the PIP package installer in the directory
 \\\Users\UserName\AppData\Local\Programs\Python\Python38\Scripts
 put it in the path
 
+## ***matplot-005.py
+
+try data scientist model on linear series ... using pandas, sklearn, tensorflow, keras
+
+<img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matplotlib-005.png" alt="Finance graph with mplfinance" height="250" />
 ## *** matplot-004.py
 
 use of **candlestick_ohlc** updated to display financial graphics using matplot and mplfinance.original_flavor
 
 <img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matplotlib-valneva-finace.png" alt="Finance graph with mplfinance" height="250" />
+
+## *** matplot-003.py
+
+use the boursorama data file to display only a graph, show how to use date on x axe
+
+<img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matPlot-003.png" alt="Finance graph with mplfinance" height="250" />
 
 ## *** matPlotSample.py
 

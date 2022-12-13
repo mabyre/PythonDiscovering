@@ -1,11 +1,19 @@
 #
-# https://pythonprogramming.net/fill-pruning-matplotlib-tutorial/
-# https://geekyhumans.com/fr/prediction-boursiere-avec-python/
-# https://www.geeksforgeeks.org/convert-a-numpy-array-to-a-pandas-series/
-#
-# matPlot series will lead us to preditive of linear series
+# matPlot-0xx series will lead us to preditive of linear series
 #
 # Chez boursorama dans le grapqhique du cours de l'action, il y a un bouton télécharger.
+#
+# https://pythonprogramming.net/fill-pruning-matplotlib-tutorial/
+#
+# https://geekyhumans.com/fr/prediction-boursiere-avec-python/
+#
+# https://www.geeksforgeeks.org/convert-a-numpy-array-to-a-pandas-series/
+# Convert a NumPy array to a Pandas series
+#
+# https://geekyhumans.com/fr/prediction-boursiere-avec-python/
+# Prédiction boursière avec Python
+#
+# https://github.com/JosueAfouda/Analyse-quantitative/blob/master/Prediction%20du%20prix%20des%20actions.ipynb
 #
 #
 from datetime import datetime
@@ -17,17 +25,14 @@ import urllib
 import datetime as dt
 import pandas
 
-from mplfinance.original_flavor import candlestick_ohlc
 from matplotlib import style
 
 from sklearn.feature_selection import SequentialFeatureSelector
 from sklearn.model_selection import PredefinedSplit
-
 from sklearn.preprocessing import MinMaxScaler
 from tensorflow import keras
 from keras import Sequential
 from keras.layers import Dense, Dropout, LSTM
-
 
 style.use('fivethirtyeight')
 print(plt.style.available)
@@ -43,7 +48,7 @@ MA1 = 5
 MA2 = 15
 filename = r'.\datas\CARMAT_2022-12-12.txt'
 
-COMPAGNY = 'Name of the compagny'
+COMPAGNY = 'CARMAT'
 
 
 def moving_average(values, window):
@@ -65,25 +70,6 @@ def bytespdate2num(fmt, encoding='utf-8'):
         return (s1)
     return bytesconverter
 
-
-"""
-Display graph for stock
-Args:
-    stock (_type_): _description_
-"""
-fig = plt.figure()
-ax1 = plt.subplot2grid((6, 1), (0, 0), rowspan=1, colspan=1)
-plt.title('stock')
-plt.ylabel('H-L')
-ax2 = plt.subplot2grid((6, 1), (1, 0), rowspan=4, colspan=1)
-plt.ylabel('Price')
-ax3 = plt.subplot2grid((6, 1), (5, 0), rowspan=1, colspan=1)
-plt.ylabel('MAvgs')
-
-# Unfortunately, Yahoo's API is no longer available
-# stock_price_url = 'http://chartapi.finance.yahoo.com/instrument/1.0/' + \
-#     stock + '/chartdata;type=quote;range=1y/csv'
-# source_code = urllib.request.urlopen(stock_price_url).read().decode()
 
 # Colums you'll find in file
 #
@@ -167,7 +153,7 @@ predicted_price = scaler.inverse_transform(predicted_price)
 
 # plot the test Predictions
 plt.plot(actual_prices, color="black", label=f"Actual{COMPAGNY} price")
-plt.plot(predicted_price, color='green', label="Predicted {COMPAGNY} Price")
+plt.plot(predicted_price, color='green', label=f"Predicted {COMPAGNY} Price")
 plt.title(f"{COMPAGNY} Share price")
 plt.xlabel('Time')
 plt.ylabel(f'{COMPAGNY} share price')
@@ -175,8 +161,8 @@ plt.legend
 plt.show()
 
 # Print prediction
-#
-# real_data = pandas.Series(closep)
+# ----------------
+# real_data = numpy.array(closep)
 # prediction = model.predict(real_data)
 # prediction = scaler.inverse_transform(prediction)
 # print(f"Prediction: {prediction}")
