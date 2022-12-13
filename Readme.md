@@ -17,7 +17,7 @@ put it in the path
 
 try data scientist model on linear series ... using pandas, sklearn, tensorflow, keras
 
-<img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matplotlib-005.png" alt="Using keras data scientist model" height="250" />
+<img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matPlot-005.png" alt="Using keras data scientist model" height="250" />
 
 ## *** matplot-004.py
 
