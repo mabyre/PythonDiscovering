@@ -1,140 +1,81 @@
 #
 # https://pythonprogramming.net/fill-pruning-matplotlib-tutorial/
 #
-# - petit souci avec le module matplotlib.finance déprécié... bla bla bla
-#   install mplfinace ...
+# Aim is to show how to use date in horizontal axe of graph
 #
-# stock_price_url = https://chartapi.finance.yahoo.com/instrument/1.0/EBAY/chartdata;type=quote;range=1y/csv
-# https://finance.yahoo.com/instrument/1.0/EBAY/chartdata;type=quote;range=1y/csv
+# Chez boursorama dans le grapqhique du cours de l'action, il y a un bouton télécharger
+# qui permet d'exporter les valeurs au format texte avec \t comme séparateur
 #
-# Site inaccessible !!! trop vieux ce truc
 #
-# GRRRR !!!
-#
-# La nouvelle façon de faire serait ici :
-#
-# https://github.com/c0redumb/yahoo_quote_download
-#
-
-import matplotlib
+from datetime import datetime
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import matplotlib.ticker as mticker
-from mplfinance.original_flavor import candlestick_ohlc
-#from mpl_finance import candlestick_ohlc
-#from matplotlib.mplfinance import candlestick_ohlc
 from matplotlib import style
 
-import numpy as np
+import numpy
 import urllib
 import datetime as dt
 
 style.use('fivethirtyeight')
 print(plt.style.available)
-
 print(plt.__file__)
 
-MA1 = 10
-MA2 = 30
-
-
-def moving_average(values, window):
-    weights = np.repeat(1.0, window)/window
-    smas = np.convolve(values, weights, 'valid')
-    return smas
-
-
-def high_minus_low(highs, lows):
-    return highs-lows
+TITLE = 'CARMAT_2022'
+#filename = r'.\datas\VALNEVA_2022-11-24.txt'
+filename = r'.\datas\CARMAT_2022-12-12.txt'
 
 
 def bytespdate2num(fmt, encoding='utf-8'):
-    strconverter = mdates.strpdate2num(fmt)
-
     def bytesconverter(b):
         s = b.decode(encoding)
-        return strconverter(s)
+        s1 = mdates.datestr2num(datetime.strptime(
+            s, fmt).strftime('%m/%d/%Y %H%M'))
+        return (s1)
     return bytesconverter
 
 
 def graph_data(stock):
-
+    """
+    Display graph for stock
+    Args:
+        stock (_type_): _description_
+    """
     fig = plt.figure()
-    ax1 = plt.subplot2grid((6, 1), (0, 0), rowspan=1, colspan=1)
+    ax1 = plt.subplot2grid((1, 1), (0, 0), rowspan=1, colspan=1)
     plt.title(stock)
-    ax2 = plt.subplot2grid((6, 1), (1, 0), rowspan=4, colspan=1)
-    plt.xlabel('Date')
-    plt.ylabel('Price')
-    ax3 = plt.subplot2grid((6, 1), (5, 0), rowspan=1, colspan=1)
 
-    stock_price_url = 'http://chartapi.finance.yahoo.com/instrument/1.0/' + \
-        stock + '/chartdata;type=quote;range=1y/csv'
-    source_code = urllib.request.urlopen(stock_price_url).read().decode()
-    stock_data = []
-    split_source = source_code.split('\n')
-    for line in split_source:
-        split_line = line.split(',')
-        if len(split_line) == 6:
-            if 'values' not in line and 'labels' not in line:
-                stock_data.append(line)
-
-    date, closep, highp, lowp, openp, volume = np.loadtxt(stock_data,
-                                                          delimiter=',',
-                                                          unpack=True,
-                                                          converters={0: bytespdate2num('%Y%m%d')})
+    # Colums you'll find in file
+    #
+    date, openp, highp, lowp, closep, volume = numpy.loadtxt(filename,
+                                                             delimiter='\t',
+                                                             skiprows=1,  # first line is column's names
+                                                             unpack=True,
+                                                             usecols=(
+                                                                 0, 1, 2, 3, 4, 5),
+                                                             converters={0: bytespdate2num('%d/%m/%Y %H:%M')})
 
     x = 0
     y = len(date)
-    ohlc = []
+    y1 = len(closep)
 
-    while x < y:
-        append_me = date[x], openp[x], highp[x], lowp[x], closep[x], volume[x]
-        ohlc.append(append_me)
-        x += 1
+    assert y == y1, "Error in reading file"
 
-    ma1 = moving_average(closep, MA1)
-    ma2 = moving_average(closep, MA2)
-    start = len(date[MA2-1:])
+    ax1.plot_date(date, closep, r'-')
+    ax1.xaxis.set_major_formatter(mdates.DateFormatter('%d-%m-%Y'))
+    ax1.xaxis.set_major_locator(mticker.MaxNLocator(10))
 
-    h_l = list(map(high_minus_low, highp, lowp))
-
-    ax1.plot_date(date, h_l, '-')
-
-    candlestick_ohlc(ax2, ohlc, width=0.4,
-                     colorup='#77d879', colordown='#db3f3f')
-
-    for label in ax2.xaxis.get_ticklabels():
+    for label in ax1.xaxis.get_ticklabels():
         label.set_rotation(45)
 
-    ax2.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
-    ax2.xaxis.set_major_locator(mticker.MaxNLocator(10))
-    ax2.grid(True)
+    plt.setp(ax1.get_xticklabels(), visible=True)
 
-    bbox_props = dict(boxstyle='round', fc='w', ec='k', lw=1)
-
-    ax2.annotate(str(closep[-1]), (date[-1], closep[-1]),
-                 xytext=(date[-1]+4, closep[-1]), bbox=bbox_props)
-
-
-# Annotation example with arrow
-# ax2.annotate('Bad News!',(date[11],highp[11]),
-# xytext=(0.8, 0.9), textcoords='axes fraction',
-# arrowprops = dict(facecolor='grey',color='grey'))
-##
-##
-# Font dict example
-# font_dict = {'family':'serif',
-# 'color':'darkred',
-# 'size':15}
-# Hard coded text
-##    ax2.text(date[10], closep[1],'Text Example', fontdict=font_dict)
-
-    ax3.plot(date[-start:], ma1[-start:])
-    ax3.plot(date[-start:], ma2[-start:])
-
+    # Otherwise dates are ploted out of graph
     plt.subplots_adjust(left=0.11, bottom=0.24, right=0.90,
                         top=0.90, wspace=0.2, hspace=0)
     plt.show()
 
 
-graph_data('EBAY')
+graph_data(TITLE)
+
+print('Program ending...')
