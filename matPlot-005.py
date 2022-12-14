@@ -79,7 +79,7 @@ scaler = MinMaxScaler(feature_range=(0, 1))
 scaled_data = scaler.fit_transform(numpy.reshape(closep, (-1, 1)))
 
 # how many days we want to look at the past to predict
-prediction_days = 10
+prediction_days = 5
 
 # defining two empty lists for preparing the training data
 x_train = []
@@ -144,24 +144,24 @@ plt.ylabel(f'{COMPAGNY} share price')
 plt.legend
 plt.show()
 
-# Predict data for tomorrow using real data
-#
-all_days = len(closep)
-real_data = []
-for x in range(0, all_days):
-    real_data.append(closep[x])
+# # Predict data for tomorrow using real data
+# #
+# all_days = len(closep)
+# real_data = []
+# for x in range(0, all_days):
+#     real_data.append(closep[x])
 
-real_data = numpy.array(real_data)
-real_data = numpy.reshape(real_data, (all_days, 0, 1))
+# real_data = numpy.array(real_data)
+# real_data = numpy.reshape(real_data, (all_days, 0, 1))
 
-prediction = model.predict(real_data)
-prediction = scaler.inverse_transform(prediction)
+# prediction = model.predict(real_data)
+# prediction = scaler.inverse_transform(prediction)
 
-# Plot the Predictions
-plt.plot(actual_prices, color='midnightblue', label=f"Actual {COMPAGNY} price")
-plt.plot(prediction, color='green', label=f"Predicted {COMPAGNY} Price")
-plt.title(f"{COMPAGNY} share price")
-plt.xlabel('Time')
-plt.ylabel(f'{COMPAGNY} share price')
-plt.legend
-plt.show()
+# # Plot the Predictions
+# plt.plot(actual_prices, color='midnightblue', label=f"Actual {COMPAGNY} price")
+# plt.plot(prediction, color='green', label=f"Predicted {COMPAGNY} Price")
+# plt.title(f"{COMPAGNY} share price")
+# plt.xlabel('Time')
+# plt.ylabel(f'{COMPAGNY} share price')
+# plt.legend
+# plt.show()
