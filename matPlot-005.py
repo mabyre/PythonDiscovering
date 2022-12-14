@@ -28,10 +28,7 @@ import pandas
 
 from matplotlib import style
 
-from sklearn.feature_selection import SequentialFeatureSelector
-from sklearn.model_selection import PredefinedSplit
 from sklearn.preprocessing import MinMaxScaler
-from tensorflow import keras
 from keras import Sequential
 from keras.layers import Dense, Dropout, LSTM
 
