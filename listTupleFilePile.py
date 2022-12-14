@@ -1,7 +1,14 @@
 # ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== =====
-#  Listes Tuple Files Piles
+#  Liste File Pile Tuple Dictionnaire
 # ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== =====-
+#
+#
 from collections import namedtuple
+
+# -----------------------------------------------------------------------------
+#  Liste
+# -----------------------------------------------------------------------------
+
 numbers = [1, 2, 3, 4, 5]
 
 i = 0
@@ -12,8 +19,15 @@ while i < len(numbers):
 print(numbers)
 print(type(numbers))
 
+# 1
+# 2
+# 3
+# 4
+# 5
 # [1, 2, 3, 4, 5]
 # <class 'list' >
+
+# --------------------------------------
 
 # indice négatif !
 i = -1
@@ -32,6 +46,17 @@ print(numbers)
 
 a = [1, 2] * 4
 print(a)
+
+# 5
+# 4
+# 3
+# 2
+# 1
+# [2, 3]
+# [1, 2, 3]
+# [4, 5]
+# [1, 2, 0, 3, 4, 5]
+# [1, 2, 1, 2, 1, 2, 1, 2]
 
 # --------------------------------------
 
@@ -61,6 +86,102 @@ b[0] = -2
 print(a)
 print(b)
 print(c)
+
+# [-1, 2, 3]
+# [-2, 2, 3]
+# [1, 2, 3]
+
+# --------------------------------------
+
+# Listes en compréhension
+
+squares = []
+
+for x in range(10):
+    squares.append(x**2)
+
+print(squares)
+
+# [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+squares = list(map(lambda x: x**2, range(10)))
+
+print(squares)
+
+# [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+list_0 = [(x, y) for x in [1, 2, 3] for y in [3, 1, 4] if x != y]
+
+print(list_0)
+
+# [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
+
+# ------------------------------------------------------------------------------
+#  File FIFO
+# ------------------------------------------------------------------------------
+
+queue = []                 # la file est vide
+
+queue.append(1)            # la file contient [1]
+queue.append(2)            # la file contient [1, 2]
+queue.append(3)            # la file contient [1, 2, 3]
+
+result = queue.pop(0)      # la file contient [2, 3]
+
+print(result)
+print(queue)
+
+# ------------------------------------------------------------------------------
+#   Pile LIFO
+# ------------------------------------------------------------------------------
+
+stack = []                 # la pile est vide
+
+stack.append(1)            # la pile contient [1]
+stack.append(2)            # la pile contient [1, 2]
+stack.append(3)            # la pile contient [1, 2, 3]
+
+result = stack.pop()       # la pile contient [1, 2]
+
+print(result)
+print(stack)
+
+# ------------------------------------------------------------------------------
+
+maQueue = []                 # la file est vide
+
+maQueue.append(1)            # la file contient [1]
+maQueue.append(2)            # la file contient [1, 2]
+maQueue.append(3)            # la file contient [1, 2, 3]
+
+result = maQueue.pop(0)      # la file contient [2, 3]
+
+print(result)
+print(maQueue)
+
+# ------------------------------------------------------------------------------
+
+myStack = []                 # la pile est vide
+
+myStack.append(1)            # la pile contient [1]
+myStack.append(2)            # la pile contient [1, 2]
+myStack.append(3)            # la pile contient [1, 2, 3]
+
+result = myStack.pop()       # la pile contient [1, 2]
+
+print(result)
+print(myStack)
+
+# Chaîne vers liste
+chaine = '1:2:3:4'
+liste = chaine.split(':')
+print(liste)
+print(type(liste))
+
+# Liste vers chaîne
+chaine2 = ":".join(liste)
+print(f"chaine2={chaine2}")
+print(type(chaine2))
 
 # -----------------------------------------------------------------------------
 #  Tuple
@@ -132,6 +253,10 @@ print(s1[11])
 
 print("lou" in s1)
 
+# coucou loulou
+# o
+# True
+
 # ------------------------------------------------------------------------------
 #  Intervalles
 # ------------------------------------------------------------------------------
@@ -151,69 +276,80 @@ for i in evens:
     print(f"evens[{j}]={evens[j]}")
     j += 1
 
-# ------------------------------------------------------------------------------
-#  Files
-# ------------------------------------------------------------------------------
-
-queue = []                 # la file est vide
-
-queue.append(1)            # la file contient [1]
-queue.append(2)            # la file contient [1, 2]
-queue.append(3)            # la file contient [1, 2, 3]
-
-result = queue.pop(0)      # la file contient [2, 3]
-
-print(result)
-print(queue)
+# range(1, 5)
+# 4
+# 3
+# range(3, 5)
+# range(2, 12, 2)
+# evens[0]=2
+# evens[1]=4
+# evens[2]=6
+# evens[3]=8
+# evens[4]=10
 
 # ------------------------------------------------------------------------------
-#   Piles
+# Dictionnaire
 # ------------------------------------------------------------------------------
 
-stack = []                 # la pile est vide
+d = {'a': 1, 'b': 2, 'c': 3}
 
-stack.append(1)            # la pile contient [1]
-stack.append(2)            # la pile contient [1, 2]
-stack.append(3)            # la pile contient [1, 2, 3]
+print(type(d))
 
-result = stack.pop()       # la pile contient [1, 2]
-
-print(result)
-print(stack)
+# <class 'dict' >
 
 # ------------------------------------------------------------------------------
 
-maQueue = []                 # la file est vide
+tel = {'jack': 4098, 'sape': 4139}
+tel['guido'] = 4127
+print(tel)
 
-maQueue.append(1)            # la file contient [1]
-maQueue.append(2)            # la file contient [1, 2]
-maQueue.append(3)            # la file contient [1, 2, 3]
+# {'jack': 4098, 'sape': 4139, 'guido': 4127}
 
-result = maQueue.pop(0)      # la file contient [2, 3]
+print(tel['jack'])
 
-print(result)
-print(maQueue)
+# 4098
+
+del tel['sape']
+tel['irv'] = 4127
+
+print(tel)
+
+# {'jack': 4098, 'guido': 4127, 'irv': 4127}
+
+print(list(tel))
+
+# ['jack', 'guido', 'irv']
+
+print(sorted(tel))
+
+# ['guido', 'irv', 'jack']
+
+print('guido' in tel)
+
+# True
+
+print('jack' not in tel)
+
+# False
 
 # ------------------------------------------------------------------------------
 
-myStack = []                 # la pile est vide
+# Dictionnaire en comprehension
 
-myStack.append(1)            # la pile contient [1]
-myStack.append(2)            # la pile contient [1, 2]
-myStack.append(3)            # la pile contient [1, 2, 3]
+dico_0 = {x: x**2 for x in (2, 4, 6)}
 
-result = myStack.pop()       # la pile contient [1, 2]
+print(dico_0)
 
-print(result)
-print(myStack)
+# {2: 4, 4: 16, 6: 36}
 
-# Chaîne vers liste
-chaine = '1:2:3:4'
-liste = chaine.split(':')
-print(liste)
-print(type(liste))
+# -------------------------------------------------
 
-# Liste vers chaîne
-chaine2 = ":".join(liste)
-print(f"chaine2={chaine2}")
-print(type(chaine2))
+dico_1 = dict(sape=4139, guido=4127, jack=4098)
+
+print(dico_1)
+
+# {'sape': 4139, 'guido': 4127, 'jack': 4098}
+
+# ------------------------------------------------------------------------------
+
+print('Program ending')
