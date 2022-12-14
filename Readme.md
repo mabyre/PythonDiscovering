@@ -59,6 +59,10 @@ demonstrate how to create modular function declared in directory **module**
 
 the use of Vector class defined in \\\module\Vector.py file
 
+## *** pythonStartup.py
+
+a way to make a clearScreen, then to print some informations before starting a python program
+
 **Hope you enjoy as I do!**
 
 ## My python references
