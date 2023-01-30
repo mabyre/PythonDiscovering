@@ -1,6 +1,9 @@
-#
-# https://numpy.org/doc/stable/user/quickstart.html
-#
+""" Play with NumPy
+
+    https://numpy.org/doc/stable/user/quickstart.html
+    https://www.labri.fr/perso/rgiot/cours/anavis/Exercices/
+"""
+
 import numpy
 
 b = numpy.arange(12).reshape(3, 4)
@@ -45,6 +48,9 @@ print(c1)
 
 print('-------- Convolution --------')
 
+conv = numpy.convolve([1, 2, 3], [0, 1, 0.5], 'full')
+print(conv)
+
 conv = numpy.convolve([1, 2, 3], [0, 1, 0.5])
 print(conv)
 
@@ -56,3 +62,8 @@ print(conv)
 
 conv = numpy.convolve([1, 2, 3], [0, 0.5], 'valid')
 print(conv)
+
+# [0.  1.  2.5 4.  1.5]
+# [1.  2.5 4.]
+# [2.5]
+# [0.5 1.]

@@ -118,6 +118,10 @@ model.compile(optimizer='adam', loss='mean_squared_error')
 # fit the model in the training data
 model.fit(x_train, y_train, epochs=25, batch_size=32)
 
+# Evaluate the trained model should be done with x_test
+score = model.evaluate(x_train, y_train, verbose=0)
+print(f'Test loss: {score}')
+
 # ----------
 # Test model
 # ----------

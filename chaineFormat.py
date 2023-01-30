@@ -15,6 +15,10 @@ print(f"[float1={float1}]")
 print(f"[float1={float1:8.2f}]")
 print(f"[float1={float1:.3e}]")
 
+tab_float = [1.02, 2.03]
+print(f'0: {tab_float[0]}')
+print(f'1: {tab_float[1]}')
+
 # string
 str1 = "abcd"
 print(f"[str1={str1}]")
