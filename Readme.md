@@ -2,6 +2,12 @@
 
 As the name says, it's to discover python language. You have a documentation **Découvrir-python.odt** in french only aim is not to be a sum, but to discover or retreive most quickly your mark in **python**
 
+Html Documentation thanks to LibreOffice
+- open Découvrir-python.odt
+- say save as choose html and doc directory
+
+[Dicovering Python](./doc/Découvrir-Python.html)
+
 ## *** tkinterDialogBox
 
 open a dialog box with tinker

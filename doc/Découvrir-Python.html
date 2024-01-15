@@ -1,0 +1,1534 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.1.1.2 (Windows)"/>
+	<meta name="created" content="2021-06-24T09:11:06.408000000"/>
+	<meta name="changedby" content="Bruno RABY"/>
+	<meta name="changed" content="2022-12-14T12:13:32.615000000"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		p { margin-bottom: 0.25cm; line-height: 115%; background: transparent }
+		h1 { margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Liberation Serif", serif; font-size: 24pt; font-weight: bold }
+		h1.cjk { font-family: "NSimSun"; font-size: 24pt; font-weight: bold }
+		h1.ctl { font-family: "Mangal"; font-size: 24pt; font-weight: bold }
+		h2 { margin-top: 0.35cm; margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt; font-weight: bold }
+		h2.cjk { font-family: "Microsoft YaHei"; font-size: 16pt; font-weight: bold }
+		h2.ctl { font-family: "Mangal"; font-size: 16pt; font-weight: bold }
+		td p { orphans: 0; widows: 0; background: transparent }
+		th p { font-weight: bold; text-align: center; orphans: 0; widows: 0; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		h3 { margin-top: 0.25cm; margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
+		h3.western { font-family: "Liberation Sans", sans-serif; font-size: 14pt; font-weight: bold }
+		h3.cjk { font-family: "Microsoft YaHei"; font-size: 14pt; font-weight: bold }
+		h3.ctl { font-family: "Mangal"; font-size: 14pt; font-weight: bold }
+		h4 { margin-top: 0.21cm; margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
+		h4.western { font-family: "Liberation Sans", sans-serif; font-size: 13pt; font-style: italic; font-weight: bold }
+		h4.cjk { font-family: "Microsoft YaHei"; font-size: 13pt; font-style: italic; font-weight: bold }
+		h4.ctl { font-family: "Mangal"; font-size: 13pt; font-style: italic; font-weight: bold }
+		a:link { color: #000080; so-language: zxx; text-decoration: underline }
+		code.western { font-family: "Liberation Mono", monospace }
+		code.cjk { font-family: "NSimSun", monospace }
+		code.ctl { font-family: "Liberation Mono", monospace }
+		a:visited { color: #800000; so-language: zxx; text-decoration: underline }
+	</style>
+</head>
+<body lang="fr-FR" link="#000080" vlink="#800000" dir="ltr"><p align="center" style="margin-top: 0.42cm; margin-bottom: 0.21cm; line-height: 100%; page-break-after: avoid">
+<font face="Liberation Sans, sans-serif"><font size="6" style="font-size: 28pt"><b>D&eacute;couvrir
+Python</b></font></font></p>
+<p style="margin-top: 0.85cm; margin-bottom: 0.35cm; border: none; padding: 0cm">
+<br/>
+<br/>
+
+</p>
+<div id="Table des mati&egrave;res1" dir="ltr">
+	<div id="Table des mati&egrave;res1_Head" dir="ltr"><p style="margin-top: 0.42cm; margin-bottom: 0.21cm; line-height: 100%; page-break-after: avoid">
+		<font face="Liberation Sans, sans-serif"><font size="4" style="font-size: 16pt"><b>Table
+		des mati&egrave;res</b></font></font></p>
+	</div>
+	<p style="margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc424_3690819589">1
+	Le Langage Python	2</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc426_3690819589">1.1 Les concepts cl&eacute;s	2</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc428_3690819589">1.2 Les mots cl&eacute;s	2</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc1273_3798814252">1.2.1
+	les m&eacute;thodes sp&eacute;ciales	2</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc430_3690819589">1.3 Installation	3</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc432_3690819589">1.4 Analyseurs
+	syntaxique de code	3</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc434_3690819589">1.5 S&eacute;quences
+	d&rsquo;&eacute;chappement	3</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc330_3507886099">1.6 Op&eacute;rateurs	4</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc1685_3798374482">1.6.1
+	Arithm&eacute;tiques	4</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc1644_3443343148">1.6.2
+	Bool&eacute;ens	4</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc332_3507886099">1.7 Port&eacute;e des
+	variables	4</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc334_3507886099">1.8 Les Listes	4</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc350_3507886099">1.8.1
+	Modification	5</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc352_3507886099">1.8.2
+	Supression	5</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc354_3507886099">1.8.3
+	Slicing	5</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc356_3507886099">1.8.4
+	Insertion	5</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc358_3507886099">1.8.5
+	Concatenation	5</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc360_3507886099">1.8.6
+	R&eacute;p&eacute;tition	6</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc362_3507886099">1.8.7
+	Appartenance	6</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc364_3507886099">1.8.8
+	Copie	6</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc2486_4177601394">1.8.9
+	Listes en compr&eacute;hension	7</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc374_3507886099">1.8.10
+	Les Files et les Piles	7</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc366_3507886099">1.9 Les Tuples (n-uplets
+	in french)	7</a></p>
+	<p style="margin-left: 1.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc368_3507886099">9.1.1 Tuple nomm&eacute;s	9</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc2488_4177601394">1.10 Dictionnaires	9</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc2490_4177601394">1.10.1
+	Distionnaire en compr&eacute;hension	10</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc370_3507886099">1.11 Chaines de
+	caract&egrave;res (string)	10</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc2492_4177601394">1.11.1
+	Passage de Liste &agrave; Chaine et de Chaine &agrave; Liste	11</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc1575_1375522689">1.11.2
+	S&eacute;quence d&rsquo;&eacute;chappement	11</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc372_3507886099">1.12 Intervalles -
+	range	11</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc1577_1375522689">1.13 Les instructions
+	et les boucles	12</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc1579_1375522689">1.13.1
+	Conditions	12</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc1581_1375522689">1.13.2
+	Boucle while	12</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc1583_1375522689">1.13.3
+	Boucle for	12</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc1585_1375522689">1.13.4
+	break et continue	13</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc376_3507886099">1.14 Les base de python
+	et les expression r&eacute;guli&egrave;res	13</a></p>
+	<p style="margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc2090_435900897">2
+	Structuration du code, modules, paquets	13</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc1968_2657004521">2.1 Les paquets	14</a></p>
+	<p style="margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc1966_2657004521">3
+	Gestion des exceptions	14</a></p>
+	<p style="margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc2494_4177601394">4
+	Langage Objet	15</a></p>
+	<p style="margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc1978_1790458948">5
+	Objets complexes	15</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc1980_1790458948">5.1 Fichiers CSV	15</a></p>
+	<p style="margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc436_3690819589">6
+	Les IDE Python	15</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc438_3690819589">6.1 IDLE Python	15</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc440_3690819589">6.2 PyCharm	17</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc336_3507886099">6.2.1
+	Nouveau projet	17</a></p>
+	<p style="margin-left: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc442_3690819589">6.3 Visual Studio Code
+	(VSCode)	19</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc1303_748003438">6.3.1
+	Installation de Pip	20</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc1315_748003438">6.3.2
+	Module d&rsquo;import PySerial	21</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc1403_2200775603">6.3.3
+	Modules &agrave; d&eacute;couvrir	21</a></p>
+	<p style="margin-left: 1.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc1405_2200775603">3.3.1 Matplotlib	21</a></p>
+	<p style="margin-left: 1.5cm; margin-bottom: 0cm; line-height: 100%">
+	<a href="#__RefHeading___Toc1589_1375522689">3.3.2 PyAutoGUI	21</a></p>
+	<p style="margin-left: 1cm; margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc1591_1375522689">6.3.4
+	Ex&eacute;cuter des scripts	21</a></p>
+	<p style="margin-bottom: 0cm; line-height: 100%"><a href="#__RefHeading___Toc1275_3798814252">7
+	R&eacute;f&eacute;rences	21</a></p>
+</div>
+<h1 class="western" style="margin-top: 0.85cm; margin-bottom: 0.35cm; border: none; padding: 0cm"><a name="__RefHeading___Toc424_3690819589"></a>
+<font color="#000000"><font face="Arial"><font size="5">1Le Langage
+Python</font></font></font></h1>
+<p>Python est un ancien langage n&eacute; &agrave; la fin des<b>
+ann&eacute;es 1980</b> gr&acirc;ce au programmeur Guido van Rossum
+qui est fan de la s&eacute;rie Monty Python's Flying Circus. En <b>1989</b>
+il cr&eacute;&eacute; la premi&egrave;re version de ce langage
+pendant la semaine de No&euml;l.</p>
+<h2 class="western"><a name="__RefHeading___Toc426_3690819589"></a>1.1Les
+concepts cl&eacute;s</h2>
+<p>Langage interpr&eacute;t&eacute;, multiparadigme (un paradigme est
+une fa&ccedil;on d&rsquo;aborder la programmation, d&eacute;termine
+la vue qu&rsquo;a le d&eacute;veloppeur de l&rsquo;ex&eacute;cution
+du programme), multiplateforme.</p>
+<p>Programmation imp&eacute;rative structur&eacute;e, typage fort,
+gestion automatique de la m&eacute;moire par ramasse miettes, syst&egrave;me
+de gestion des exceptions.</p>
+<p>L&rsquo;indentation comme syntaxe.</p>
+<h2 class="western"><a name="__RefHeading___Toc428_3690819589"></a>1.2Les
+mots cl&eacute;s</h2>
+<p style="margin-bottom: 0.35cm; border: none; padding: 0cm"><font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt">Les
+mots-cl&eacute;s de Python 2.7.5 sont les suivants : </font></font></font>
+</p>
+<p style="margin-bottom: 0.35cm; border: none; padding: 0cm"><font color="#0000ff"><font face="Arial"><font size="2" style="font-size: 11pt">and,
+as, assert, break, class, continue, def, del, elif, else, except,
+exec, finally, for, from, global, if, import, in, is, lambda, not,
+or, pass, print, raise, return, try, while, with, yield.</font></font></font></p>
+<p style="margin-bottom: 0.35cm; border: none; padding: 0cm"><font color="#0000ff"><font face="Arial"><font size="2" style="font-size: 11pt">self</font></font></font><font color="#2a6099"><font face="Arial"><font size="2" style="font-size: 11pt">
+</font></font></font>remplace le this dans d&rsquo;autres langages</p>
+<h3 class="western"><a name="__RefHeading___Toc1273_3798814252"></a>1.2.1les
+m&eacute;thodes sp&eacute;ciales 
+</h3>
+<p>Dites &laquo; dunders &raquo; raccourcis de &laquo; double
+underscore &raquo; ou &laquo; magic methodes &raquo;</p>
+<p style="margin-bottom: 0.35cm; border: none; padding: 0cm"><font color="#0000ff">__init__</font>&nbsp;:
+constructeur de la class</p>
+<p style="margin-bottom: 0.35cm; border: none; padding: 0cm"><font color="#0000ff">__call_</font><font color="#0000ff">(</font><font color="#0000ff">)</font><font color="#0369a3">&nbsp;</font>:
+permet de d&eacute;finir des appelables</p>
+<p style="margin-bottom: 0.35cm; border: none; padding: 0cm"><font color="#0000ff">__new__</font><font color="#0000ff">()</font>
+et <font color="#0000ff">__del_</font><font color="#0000ff">(</font><font color="#0000ff">)</font><font color="#0369a3">
+</font>: cr&eacute;ation et suppression des objets</p>
+<p style="margin-bottom: 0.35cm; border: none; padding: 0cm"><font color="#0000ff">__repr_</font><font color="#0000ff">()</font><font color="#0369a3">
+</font>: pour repr&eacute;senter l&rsquo;objet dans la console</p>
+<p style="margin-bottom: 0.35cm; border: none; padding: 0cm"><font color="#0000ff">__hash_()</font></p>
+<p><a href="#4.R&eacute;f&eacute;rences|outline">cf. R&eacute;f&eacute;rence</a></p>
+<h2 class="western"><a name="__RefHeading___Toc430_3690819589"></a>1.3Installation</h2>
+<p style="margin-bottom: 0cm; line-height: 100%">Une fois install&eacute;
+tous les fichiers .py se comportent comme des scripts et sont
+ex&eacute;cut&eacute;s gr&acirc;ce &agrave; l&rsquo;interpr&eacute;teur
+plac&eacute; dans <b>C:\windows</b> 
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><img src="D%C3%A9couvrir-Python_html_aeb80dd8990acead.png" name="Image1" align="left" width="643" height="362" border="0"/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">C&rsquo;est bien
+l&rsquo;avantage de python.</p>
+<h2 class="western"><a name="__RefHeading___Toc432_3690819589"></a>1.4Analyseurs
+syntaxique de code</h2>
+<p>Outils qui permettent une analyse syntaxique de vos codes en
+python</p>
+<p><a href="https://www.pylint.org/">https://www.pylint.org/</a></p>
+<p>Analyse static</p>
+<p><a href="http://mypy-lang.org/">http://mypy-lang.org/</a></p>
+<h2 class="western"><a name="__RefHeading___Toc434_3690819589"></a>1.5S&eacute;quences
+d&rsquo;&eacute;chappement</h2>
+<p>Ins&eacute;rer des caract&egrave;res sp&eacute;ciaux</p>
+<table width="100%" cellpadding="4" cellspacing="0">
+	<col width="128*"/>
+
+	<col width="128*"/>
+
+	<tr valign="top">
+		<th width="50%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm"><p>
+			S&eacute;quence</p>
+		</th>
+		<th width="50%" style="border: 1px solid #000000; padding: 0.1cm"><p>
+			Description</p>
+		</th>
+	</tr>
+	<tr valign="top">
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm"><p class="ligne-tableau">
+			\\</p>
+		</td>
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm"><p class="ligne-tableau">
+			Backslash</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm"><p class="ligne-tableau">
+			\<code class="western">'</code></p>
+		</td>
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm"><p class="ligne-tableau">
+			Guillemet simple (apostrophe)</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm"><p class="ligne-tableau">
+			\<code class="western">&quot;</code></p>
+		</td>
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm"><p class="ligne-tableau">
+			Guillemet double</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm"><p class="ligne-tableau">
+			\n</p>
+		</td>
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm"><p class="ligne-tableau">
+			Saut de ligne</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm"><p class="ligne-tableau">
+			\r</p>
+		</td>
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm"><p class="ligne-tableau">
+			Retour chariot</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm"><p class="ligne-tableau">
+			\t</p>
+		</td>
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm"><p class="ligne-tableau">
+			Tabulation horizontale</p>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<h2 class="western"><a name="__RefHeading___Toc330_3507886099"></a>1.6Op&eacute;rateurs</h2>
+<p>arithm&eacute;tiques, d&rsquo;affectation ou d&rsquo;assignation,
+de cha&icirc;nes, de comparaison, logiques, d&rsquo;identit&eacute;,
+d&rsquo;appartenance, binaires.</p>
+<h3 class="western"><a name="__RefHeading___Toc1685_3798374482"></a>1.6.1Arithm&eacute;tiques</h3>
+<p><br/>
+<br/>
+
+</p>
+<table width="254" cellpadding="4" cellspacing="0">
+	<col width="86"/>
+
+	<col width="150"/>
+
+	<tr valign="top">
+		<td width="86" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.1cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm"><p>
+			<b>Op&eacute;rateur</b>	</p>
+		</td>
+		<td width="150" style="border: 1px solid #000000; padding: 0.1cm"><p>
+			<b>Nom</b></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="86" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm"><p>
+			+</p>
+		</td>
+		<td width="150" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm"><p>
+			Addition</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="86" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm"><p>
+			&ndash;</p>
+		</td>
+		<td width="150" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm"><p>
+			Soustraction</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="86" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm"><p>
+			*	</p>
+		</td>
+		<td width="150" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm"><p>
+			Multiplication</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="86" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm"><p>
+			/	</p>
+		</td>
+		<td width="150" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm"><p>
+			Division</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="86" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm"><p>
+			%	</p>
+		</td>
+		<td width="150" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm"><p>
+			Modulo</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="86" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm"><p>
+			**	</p>
+		</td>
+		<td width="150" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm"><p>
+			Puissance</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="86" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm"><p>
+			//	</p>
+		</td>
+		<td width="150" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm"><p>
+			Division enti&egrave;re</p>
+		</td>
+	</tr>
+</table>
+<p><br/>
+<br/>
+
+</p>
+<h3 class="western"><a name="__RefHeading___Toc1644_3443343148"></a>1.6.2Bool&eacute;ens</h3>
+<p>Bool&eacute;ens : <font color="#0000ff">True, False, </font><font color="#0000ff">bool(0)
+</font>==<font color="#0000ff"> False, </font>bool(x) == <font color="#0000ff">True</font></p>
+<p>Comparaison : ==, !=, &lt;, &gt;, &le;, &ge;</p>
+<p>Logique : <font color="#0000ff">not</font><font color="#3465a4">
+</font>(comme le ! en C)<font color="#3465a4"> </font><font color="#3465a4">,
+</font><font color="#0000ff">and</font><font color="#3465a4"> </font>(<font color="#0000ff">&amp;&amp;</font>),
+<font color="#0000ff">or</font> (<font color="#0000ff">||</font>)</p>
+<p><font color="#0000ff">not</font>(a == b)</p>
+<p>Pr&eacute;c&eacute;dence des op&eacute;rateurs&nbsp;: *, +, ==,
+not</p>
+<h2 class="western"><a name="__RefHeading___Toc332_3507886099"></a>1.7Port&eacute;e
+des variables</h2>
+<p>Il n&rsquo;y a pas cette notion en python !</p>
+<p>C&rsquo;est l&rsquo;intellisense de VS Code qui grise une variable
+si elle  n&rsquo;est pas accessible dans le contexte.</p>
+<h2 class="western"><a name="__RefHeading___Toc334_3507886099"></a>1.8Les
+Listes</h2>
+<pre class="western" style="border: none; padding: 0cm; text-align: left; orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0cm"><span style="font-variant: normal"><font color="#212529"><span style="text-decoration: none"><font face="Courier New, Courier, mono, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">n</span></span></span></font></font></span></font></span></code><span style="font-variant: normal"><font color="#212529"><span style="text-decoration: none"><font face="Courier New, Courier, mono, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">umbers </span></span></span></font></font></span></font></span></code><span style="font-variant: normal"><font color="#7f0055"><span style="text-decoration: none"><font face="Courier New, Courier, mono, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">=</span></span></span></font></font></span></font></span></code><span style="font-variant: normal"><font color="#212529"><span style="text-decoration: none"><font face="Courier New, Courier, mono, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western"> [</span></span></span></font></font></span></font></span></code><span style="font-variant: normal"><font color="#ff0000"><span style="text-decoration: none"><font face="Courier New, Courier, mono, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">1</span></span></span></font></font></span></font></span></code><span style="font-variant: normal"><font color="#212529"><span style="text-decoration: none"><font face="Courier New, Courier, mono, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">, </span></span></span></font></font></span></font></span></code><span style="font-variant: normal"><font color="#ff0000"><span style="text-decoration: none"><font face="Courier New, Courier, mono, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">2</span></span></span></font></font></span></font></span></code><span style="font-variant: normal"><font color="#212529"><span style="text-decoration: none"><font face="Courier New, Courier, mono, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">, </span></span></span></font></font></span></font></span></code><span style="font-variant: normal"><font color="#ff0000"><span style="text-decoration: none"><font face="Courier New, Courier, mono, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">3</span></span></span></font></font></span></font></span></code><span style="font-variant: normal"><font color="#212529"><span style="text-decoration: none"><font face="Courier New, Courier, mono, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">, </span></span></span></font></font></span></font></span></code><span style="font-variant: normal"><font color="#ff0000"><span style="text-decoration: none"><font face="Courier New, Courier, mono, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">4</span></span></span></font></font></span></font></span></code><span style="font-variant: normal"><font color="#212529"><span style="text-decoration: none"><font face="Courier New, Courier, mono, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">, </span></span></span></font></font></span></font></span></code><span style="font-variant: normal"><font color="#ff0000"><span style="text-decoration: none"><font face="Courier New, Courier, mono, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">5</span></span></span></font></font></span></font></span></code><span style="font-variant: normal"><font color="#212529"><span style="text-decoration: none"><font face="Courier New, Courier, mono, sans-serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><code class="western">]</span></span></span></span></font></font></span></font></span></code>
+</pre><p>
+Utilisation d&rsquo;un indice n&eacute;gatif pour parcourir depuis la
+fin.</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">i&nbsp;=&nbsp;-<font color="#098658">1</font></span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#0000ff">while</font>&nbsp;i&nbsp;&gt;=&nbsp;-len(numbers):</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;&nbsp;&nbsp;&nbsp;<font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">print(numbers[i])</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;&nbsp;&nbsp;&nbsp;<font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">i&nbsp;-=&nbsp;</span></font></font><font color="#098658"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">1</span></font></font></font></span></font></p>
+<p><img src="D%C3%A9couvrir-Python_html_ef14d50d9ecfbb04.png" name="Image8" align="left" width="287" height="169" border="0"/>
+<br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<h3 class="western"><a name="__RefHeading___Toc350_3507886099"></a>1.8.1Modification</h3>
+<pre class="western"><code class="western">numbers[0] = 15</code>
+</pre><h3 class="western">
+<a name="__RefHeading___Toc352_3507886099"></a>1.8.2Supression</h3>
+<pre class="western">
+<code class="western">del(numbers[2])</code>
+
+</pre><h3 class="western">
+<a name="__RefHeading___Toc354_3507886099"></a>1.8.3Slicing</h3>
+<p>Extraire une sous-liste deux indice d&eacute;but (inclus) fin
+(exclus)</p>
+<p style="margin-bottom: 0cm; line-height: 100%">sous_numbers&nbsp;=&nbsp;numbers[1:3]</p>
+<p style="margin-bottom: 0cm; line-height: 100%">print(sous_numbers)</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">-&gt;[2, 3]</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">print(numbers[:3])</p>
+<p style="margin-bottom: 0cm; line-height: 100%">print(numbers[3:])</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">-&gt;[1, 2, 3]</p>
+<p>-&gt;[4, 5]</p>
+<h3 class="western"><a name="__RefHeading___Toc356_3507886099"></a>1.8.4Insertion</h3>
+<pre class="western"><code class="western">numbers = [1, 2, 3, 4, 5]</code>
+<code class="western">numbers[2:2] = [0]</code>
+<code class="western">print(numbers)</code>
+
+<code class="western">-&gt;[1, 2, 0, 3, 4, 5]</code></pre><h3 class="western">
+<a name="__RefHeading___Toc358_3507886099"></a>1.8.5<code class="western">Concatenation</code></h3>
+<pre class="western"><code class="western">a</code><code class="western"> = [1, 2, 3]<br/>
+b = [4, 5]<br/>
+numbers = a + b</code>
+
+<code class="western">Attention&nbsp;</code><code class="western">au r&eacute;sultat suivant</code><code class="western"> :</code>
+</pre><p style="margin-bottom: 0cm; line-height: 100%">
+<code class="western"><font color="#001080"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">a</span></span></font></font></font></code><code class="western"><font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">
+= [</span></span></font></font></font></code><code class="western"><font color="#098658"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">1</span></span></font></font></font></code><code class="western"><font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">,
+</span></span></font></font></font></code><code class="western"><font color="#098658"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">2</span></span></font></font></font></code><code class="western"><font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">]</span></span></font></font></font></code></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#001080">a</font>
++= <font color="#a31515">'123'</font></span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#795e26">print</font>(<font color="#001080">a</font>)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#001080">a</font>
+= [<font color="#098658">1</font>, <font color="#098658">2</font>]</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#001080">a</font>
++= [<font color="#a31515">'123'</font>]</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#795e26">print</font>(<font color="#001080">a</font>)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<br/>
+
+</p>
+<pre class="western"><code class="western">-&gt;[1, 2, '1', '2', '3']</code>
+<code class="western">-&gt;[1, 2, '123']</code>
+</pre><h3 class="western">
+<a name="__RefHeading___Toc360_3507886099"></a>1.8.6<code class="western">R&eacute;p&eacute;tition</code></h3>
+<pre class="western"><code class="western">a = [1, 2] * 4</code>
+<code class="western">print(a)</code>
+
+<code class="western">-&gt;[1, 2, 1, 2, 1, 2, 1, 2]</code></pre><h3 class="western">
+<a name="__RefHeading___Toc362_3507886099"></a>1.8.7<code class="western">Appartenance</code></h3>
+<pre class="western">a = [1, 2] * 4
+print(a)
+
+<font color="#0000ff">def</font> contains(data, element):
+    i = 0
+    <font color="#0000ff">while</font> i &lt; len(data):
+        if data[i] == element:
+            return True
+        i += 1
+    <font color="#0000ff">return</font> False
+
+
+<font color="#0000ff">print</font>(contains(a, 4))
+<font color="#0000ff">print</font>(4 in a)
+
+print(not contains(a, 2))
+print(2 not in a)
+
+-&gt; [1, 2, 1, 2, 1, 2, 1, 2]
+-&gt; False
+-&gt; False
+False
+False
+</pre><h3 class="western">
+<a name="__RefHeading___Toc364_3507886099"></a>1.8.8Copie</h3>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#&nbsp;copie</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">a&nbsp;=&nbsp;[<font color="#098658">1</font>,&nbsp;<font color="#098658">2</font>,&nbsp;<font color="#098658">3</font>]</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">b&nbsp;=&nbsp;a[<font color="#098658">0</font>:len(a)]</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">c&nbsp;=&nbsp;b[:]</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">a[<font color="#098658">0</font>]&nbsp;=&nbsp;-<font color="#098658">1</font></span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">b[<font color="#098658">0</font>]&nbsp;=&nbsp;-<font color="#098658">2</font></span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(a)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(b)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(c)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<br/>
+
+</p>
+<pre class="western">-&gt; [-1, 2, 3]
+-&gt; [-2, 2, 3]
+-&gt; [1, 2, 3]
+
+Les op&eacute;rateurs de comparaison bool&eacute;ens s&rsquo;appliquent aux listes</pre><h3 class="western">
+<a name="__RefHeading___Toc2486_4177601394"></a>1.8.9Listes en
+compr&eacute;hension</h3>
+<p>Cr&eacute;ation concise de listes.</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#
+compr&eacute;hension</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#001080">squares</font>
+= []</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#af00db">for</font>
+<font color="#001080">x</font> <font color="#af00db">in</font>
+<font color="#267f99">range</font>(<font color="#098658">10</font>):</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; <font color="#001080"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">squares</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">.</span></font></font><font color="#795e26"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">append</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">(</span></font></font><font color="#001080"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">x</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">**</span></font></font><font color="#098658"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">2</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">)</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#795e26">print</font>(<font color="#001080">squares</font>)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#001080">squares</font>
+= <font color="#267f99">list</font>(<font color="#267f99">map</font>(<font color="#0000ff">lambda</font>
+<font color="#001080">x</font>: <font color="#001080">x</font>**<font color="#098658">2</font>,
+<font color="#267f99">range</font>(<font color="#098658">10</font>)))</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#795e26">print</font>(<font color="#001080">squares</font>)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p>Autre cmpr&eacute;hension de liste&nbsp;:</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#001080">list_0</font>
+= [(<font color="#001080">x</font>, <font color="#001080">y</font>)
+<font color="#af00db">for</font> <font color="#001080">x</font> <font color="#af00db">in</font>
+[<font color="#098658">1</font>, <font color="#098658">2</font>, <font color="#098658">3</font>]
+<font color="#af00db">for</font> <font color="#001080">y</font> <font color="#af00db">in</font>
+[<font color="#098658">3</font>, <font color="#098658">1</font>, <font color="#098658">4</font>]
+<font color="#af00db">if</font> <font color="#001080">x</font> != <font color="#001080">y</font>]</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#795e26">print</font>(<font color="#001080">list_0</font>)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#
+[(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<h3 class="western"><a name="__RefHeading___Toc374_3507886099"></a>1.8.10Les
+Files et les Piles</h3>
+<p>Files c&rsquo;est FIFO</p>
+<p>Piles c&rsquo;est LIFO</p>
+<p>append() pop()</p>
+<h2 class="western"><a name="__RefHeading___Toc366_3507886099"></a>1.9Les
+Tuples (n-uplets in french)</h2>
+<p>S&eacute;quence non modifiable d&rsquo;&eacute;l&eacute;ments
+h&eacute;t&eacute;rog&egrave;nes ou pas</p>
+<pre class="western"># tuple vide
+a = ()
+# tuple contenant un seul &eacute;l&eacute;ment
+b = 1,
+c = (1,)
+# tuple contenant trois &eacute;l&eacute;ments
+d = 1, 2, 3
+e = (1, 2, 3)
+
+t = 1, 2, 3
+r = sum(t)
+print(r)
+
+r = sum((1, 2, 3))
+print(r)
+
+-&gt; 6
+-&gt; 6<br/>
+</pre><p>
+Un int&eacute;r&ecirc;t du tuple est de pouvoir <b>d&eacute;finir des
+fonctions qui renvoient plusieurs valeurs</b>, il suffit de renvoyer
+un tuple</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#0000ff">def</font>&nbsp;find(data,&nbsp;element):</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;&nbsp;&nbsp;&nbsp;<font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">i&nbsp;=&nbsp;</span></font></font><font color="#098658"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">0</span></font></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">while</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">&nbsp;i&nbsp;&lt;&nbsp;len(data):</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">if</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">&nbsp;data[i]&nbsp;==&nbsp;element:</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">return</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">&nbsp;</span></font></font><font color="#0000ff"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">True</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">,&nbsp;i</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">i&nbsp;+=&nbsp;</span></font></font><font color="#098658"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">1</span></font></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;&nbsp;&nbsp;&nbsp;<font color="#0000ff"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">return</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">&nbsp;</span></font></font><font color="#0000ff"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">False</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">,&nbsp;</span></font></font><font color="#0000ff"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">None</span></font></font></font></span></font></p>
+<p style="margin-bottom: 0.5cm; line-height: 0.5cm"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">values&nbsp;=&nbsp;[<font color="#098658">1</font>,&nbsp;<font color="#098658">2</font>,&nbsp;<font color="#098658">3</font>,&nbsp;<font color="#098658">4</font>]</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(find(values,&nbsp;<font color="#098658">2</font>))</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">print(find(values,&nbsp;</span></span></font></font></font><font color="#098658"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">6</span></span></font></font></font><font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">))</span></span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm">-&gt; (True, 1)</p>
+<p>-&gt; (False, None)</p>
+<p>Emballage, d&eacute;ballage du tuple&nbsp;:</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">tuple1</span></span></font></font></font>
+= <font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">find</span></span></font></font></font>(<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">values</span></span></font></font></font>,
+2)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">tu1,
+tu2 = tuple1  <font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">#d</span></span></font></font></font><font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">&eacute;ballage</span></span></font></font></font></span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#0000ff">print</font>('tu1:',
+tu1)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#0000ff">print</font>('tu2:',
+tu2)</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">t&nbsp;=&nbsp;<font color="#098658">1</font>,&nbsp;<font color="#098658">2</font>,&nbsp;<font color="#098658">3</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008000">#&nbsp;emballage</font></span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">a,&nbsp;b,&nbsp;c&nbsp;=&nbsp;t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008000">#&nbsp;d&eacute;ballage</font></span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(t)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(a)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(b)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(c)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<br/>
+
+</p>
+<p>-&gt; (1, 2, 3)<br/>
+-&gt; 1<br/>
+-&gt; 2<br/>
+-&gt; 3</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#&nbsp;Operateur&nbsp;de&nbsp;deballage&nbsp;:&nbsp;<b>*</b></span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">t&nbsp;=&nbsp;<font color="#098658">1</font>,&nbsp;<font color="#098658">2</font>,&nbsp;<font color="#098658">3</font></span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">result&nbsp;=&nbsp;max(<b>*</b>t)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(result)<br/>
+</span></font></font></font><br/>
+
+</p>
+<p>-&gt; 3</p>
+<h4 class="western"><a name="__RefHeading___Toc368_3507886099"></a>9.1.1Tuple
+nomm&eacute;s</h4>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#&nbsp;Tuple&nbsp;nom&eacute;</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">Item&nbsp;=&nbsp;namedtuple(<font color="#a31515">'Item'</font>,&nbsp;[<font color="#a31515">'barcode'</font>,&nbsp;<font color="#a31515">'description'</font>,&nbsp;<font color="#a31515">'price'</font>])</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">coca&nbsp;=&nbsp;Item(<font color="#098658">5449000000996</font>,&nbsp;<font color="#a31515">&quot;Coca-Cola&nbsp;33cl&quot;</font>,&nbsp;<font color="#098658">0.70</font>)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(coca)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(len(coca))</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(coca[<font color="#098658">1</font>])</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(coca[<font color="#098658">1</font>:<font color="#098658">3</font>])</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(coca.description)</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p>-&gt; Item(barcode=5449000000996, description='Coca-Cola 33cl',
+price=0.7)</p>
+<p>-&gt; 3</p>
+<p>-&gt; Coca-Cola 33cl</p>
+<p>-&gt; ('Coca-Cola 33cl', 0.7)</p>
+<p>-&gt; Coca-Cola 33cl</p>
+<h2 class="western"><a name="__RefHeading___Toc2488_4177601394"></a>1.10Dictionnaires</h2>
+<p>Ensemble de paires clef - valeur</p>
+<p>Appel&eacute;s parfois dans d&rsquo;autres langages tableaux
+associatifs.</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#001080">d</font>
+= {<font color="#a31515">'a'</font>: <font color="#098658">1</font>,
+<font color="#a31515">'b'</font>: <font color="#098658">2</font>,
+<font color="#a31515">'c'</font>: <font color="#098658">3</font>}</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#795e26"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">print</span></span></font></font></font><font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">(</span></span></font></font></font><font color="#267f99"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">type</span></span></font></font></font><font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">(</span></span></font></font></font><font color="#001080"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">d</span></span></font></font></font><font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal"><span style="background: #ffffff">))</span></span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#
+&lt;class 'dict' &gt;</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#001080">tel</font>
+= {<font color="#a31515">'jack'</font>: <font color="#098658">4098</font>,
+<font color="#a31515">'sape'</font>: <font color="#098658">4139</font>}</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#001080">tel</font>[<font color="#a31515">'guido'</font>]
+= <font color="#098658">4127</font></span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#795e26">print</font>(<font color="#001080">tel</font>)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#
+{'jack': 4098, 'sape': 4139, 'guido': 4127}</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#795e26">print</font>(<font color="#001080">tel</font>[<font color="#a31515">'jack'</font>])</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#
+4098</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#af00db">del</font>
+<font color="#001080">tel</font>[<font color="#a31515">'sape'</font>]</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#001080">tel</font>[<font color="#a31515">'irv'</font>]
+= <font color="#098658">4127</font></span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#795e26">print</font>(<font color="#001080">tel</font>)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#
+{'jack': 4098, 'guido': 4127, 'irv': 4127}</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#795e26">print</font>(<font color="#267f99">list</font>(<font color="#001080">tel</font>))</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#
+['jack', 'guido', 'irv']</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#795e26">print</font>(<font color="#795e26">sorted</font>(<font color="#001080">tel</font>))</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#
+['guido', 'irv', 'jack']</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#795e26">print</font>(<font color="#a31515">'guido'</font>
+<font color="#af00db">in</font> <font color="#001080">tel</font>)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#
+True</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#795e26">print</font>(<font color="#a31515">'jack'</font>
+<font color="#af00db">not</font> <font color="#af00db">in</font> <font color="#001080">tel</font>)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#
+False</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<br/>
+
+</p>
+<h3 class="western"><a name="__RefHeading___Toc2490_4177601394"></a>1.10.1Distionnaire
+en compr&eacute;hension</h3>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#
+Dictionnaire en comprehension</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#001080">dico_0</font>
+= {<font color="#001080">x</font>: <font color="#001080">x</font>**<font color="#098658">2</font>
+<font color="#af00db">for</font> <font color="#001080">x</font> <font color="#af00db">in</font>
+(<font color="#098658">2</font>, <font color="#098658">4</font>, <font color="#098658">6</font>)}</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#795e26">print</font>(<font color="#001080">dico_0</font>)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#
+{2: 4, 4: 16, 6: 36}</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<h2 class="western"><a name="__RefHeading___Toc370_3507886099"></a>1.11Chaines
+de caract&egrave;res (string)</h2>
+<p>S&eacute;quences non modifiables de caract&egrave;res</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">s1&nbsp;=&nbsp;<font color="#a31515">&quot;coucou&nbsp;loulou&quot;</font></span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#&nbsp;s2&nbsp;=&nbsp;s1[11]&nbsp;ERROR</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(s1)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(s1[<font color="#098658">11</font>])</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(<font color="#a31515">&quot;lou&quot;</font>&nbsp;<font color="#0000ff">in</font>&nbsp;s1)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<br/>
+
+</p>
+<p>-&gt; coucou loulou</p>
+<p>-&gt; o</p>
+<p>-&gt; True</p>
+<p>longueur de la cha&icirc;ne&nbsp;: 
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">len(s1)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<br/>
+
+</p>
+<h3 class="western"><a name="__RefHeading___Toc2492_4177601394"></a>1.11.1Passage
+de Liste &agrave; Chaine et de Chaine &agrave; Liste</h3>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#&nbsp;Cha&icirc;ne&nbsp;vers&nbsp;liste</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">chaine&nbsp;=&nbsp;<font color="#a31515">'1:2:3:4'</font></span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">liste&nbsp;=&nbsp;chaine.split(<font color="#a31515">':'</font>)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(liste)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(type(liste))</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#&nbsp;Liste&nbsp;vers&nbsp;cha&icirc;ne</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">chaine2&nbsp;=&nbsp;<font color="#a31515">&quot;:&quot;</font>.join(liste)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(<font color="#0000ff">f</font><font color="#a31515">&quot;chaine2=</font>{chaine2}<font color="#a31515">&quot;</font>)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(type(chaine2))</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<br/>
+
+</p>
+<p>-&gt; ['1', '2', '3', '4']<br/>
+-&gt; &lt;class 'list'&gt;<br/>
+-&gt;
+chaine2=1:2:3:4<br/>
+-&gt; &lt;class 'str'&gt;</p>
+<h3 class="western"><a name="__RefHeading___Toc1575_1375522689"></a>1.11.2S&eacute;quence
+d&rsquo;&eacute;chappement</h3>
+<p>Pour &eacute;viter d&rsquo;avoir &agrave; mettre &laquo;&nbsp;\\&nbsp;&raquo;
+pour d&eacute;finir un path par exemple, on ecrit&nbsp;:</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">fileSource&nbsp;=&nbsp;<font color="#0000ff">r</font><font color="#811f3f">'D:\U</font><font color="#811f3f">serName</font><font color="#811f3f">\Ionbird\FlyingDatas\2021-0823\2021-08-23-11-53.csv'</font></span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<h2 class="western"><a name="__RefHeading___Toc372_3507886099"></a>1.12Intervalles
+- range</h2>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">i&nbsp;=&nbsp;range(<font color="#098658">1</font>,&nbsp;<font color="#098658">5</font>)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(i)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(len(i))</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(i[<font color="#098658">2</font>])</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(i[<font color="#098658">2</font>:<font color="#098658">5</font>])</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p>-&gt; range(1, 5)<br/>
+-&gt; 4<br/>
+-&gt; 3<br/>
+-&gt; range(3, 5)</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">evens&nbsp;=&nbsp;range(<font color="#098658">2</font>,&nbsp;<font color="#098658">12</font>,&nbsp;<font color="#098658">2</font>)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">print(evens)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">j&nbsp;=&nbsp;<font color="#098658">0</font></span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#0000ff">for</font>&nbsp;i&nbsp;<font color="#0000ff">in</font>&nbsp;evens:</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;&nbsp;&nbsp;&nbsp;<font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">print(</span></font></font><font color="#0000ff"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">f</span></font></font></font><font color="#a31515"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">&quot;evens[</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">{j}</span></font></font><font color="#a31515"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">]=</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">{evens[j]}</span></font></font><font color="#a31515"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">&quot;</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">)</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;&nbsp;&nbsp;&nbsp;<font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">j&nbsp;+=&nbsp;</span></font></font><font color="#098658"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">1</span></font></font></font></span></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p>-&gt; range(2, 12, 2)<br/>
+-&gt; evens[0]=2<br/>
+-&gt;
+evens[1]=4<br/>
+-&gt; evens[2]=6<br/>
+-&gt; evens[3]=8<br/>
+-&gt;
+evens[4]=10</p>
+<h2 class="western"><a name="__RefHeading___Toc1577_1375522689"></a>1.13Les
+<font face="Liberation Sans, sans-serif"><font size="5" style="font-size: 16pt"><b>instructions
+</b></font></font><font face="Liberation Sans, sans-serif"><font size="5" style="font-size: 16pt"><b>et
+</b></font></font><font face="Liberation Sans, sans-serif"><font size="5" style="font-size: 16pt"><b>les
+boucles</b></font></font></h2>
+<h3 class="western"><a name="__RefHeading___Toc1579_1375522689"></a>1.13.1Conditions</h3>
+<p>Noter les &laquo; : &raquo; qui terminent l&rsquo;instruction</p>
+<p><font color="#0000ff">if</font> x &lt; 0:<br/>
+	print('negative')<br/>
+<font color="#0000ff">elif</font>
+x == 0:<br/>
+	print('zero')<br/>
+<font color="#0000ff">else</font>:<br/>
+	print('positive')</p>
+<h3 class="western"><a name="__RefHeading___Toc1581_1375522689"></a>1.13.2Boucle
+while</h3>
+<p><font color="#0000ff">while</font> b &lt; 10:<br/>
+	print(b)</p>
+<p>pass : ordre vide qui ne fait rien, mais qui est n&eacute;cessaire
+si boucle ou condition dont le contenu est vide, car il faut au moins
+une instruction :</p>
+<p><font color="#0000ff">while</font> True:<br/>
+	pass</p>
+<h3 class="western"><a name="__RefHeading___Toc1583_1375522689"></a>1.13.3Boucle
+for</h3>
+<p><font color="#0000ff">for</font> x in myList:<br/>
+	print(x,
+len(x))</p>
+<p><font color="#0000ff">for</font> x in 'abcdef':<br/>
+	print(x)</p>
+<p><font color="#0000ff">for</font> i in range(len(a)):<br/>
+	print(i,
+x[i])</p>
+<p>Boucle for sur une liste renvers&eacute;e :</p>
+<p><font color="#0000ff">for</font> x in <font color="#0000ff">reversed</font>(myList):<br/>
+	print(x)</p>
+<p>For avec un else : le else est ex&eacute;cut&eacute; seulement si
+la boucle de termine normalement (sans break) :</p>
+<p><font color="#0000ff">for</font> ...:<br/>
+  &hellip;<br/>
+<font color="#0000ff">else</font>:<br/>
+
+ &hellip;</p>
+<h3 class="western"><a name="__RefHeading___Toc1585_1375522689"></a>1.13.4break
+et continue</h3>
+<p>Comme en langage C</p>
+<p><font color="#0000ff"><span style="font-weight: normal">break</span></font>
+: sort directement de la boucle.</p>
+<p><font color="#0000ff"><span style="font-weight: normal">c</span></font><font color="#0000ff"><span style="font-weight: normal">ontinue</span></font>
+: retourne directement &agrave; l'it&eacute;ration suivante en
+sautant ce qui est est apr&egrave;s.</p>
+<h2 class="western"><a name="__RefHeading___Toc376_3507886099"></a>1.14Les
+base de python et les expression r&eacute;guli&egrave;res</h2>
+<p>Excellent didacticiel + une somme sur les expressions r&eacute;guli&egrave;res
+(regex)</p>
+<p><a href="https://tahe.developpez.com/tutoriels-cours/python-flask-2020/?page=les-bases-de-python#L3-11">https://tahe.developpez.com/tutoriels-cours/python-flask-2020/?page=les-bases-de-python#L3-11</a></p>
+<h1 class="western"><a name="__RefHeading___Toc2090_435900897"></a>2Structuration
+du code, modules, paquets</h1>
+<p><a href="https://gayerie.dev/docs/python/python3/module.html#module-executable">https://gayerie.dev/docs/python/python3/module.html#module-executable</a></p>
+<p>Module <b>&agrave; partir d&rsquo;un fichier</b>, tout fichier
+source peut-&ecirc;tre utilis&eacute; comme un module.</p>
+<p>Module <b>&agrave; partir d&rsquo;un r&eacute;pertoire</b><span style="font-weight: normal">,</span>
+pour les modules encore plus complexes, chaque fichier se comporte
+alors comme un sous-module. Il faut placer tous les fichiers dans le
+r&eacute;pertoire portant le nom du module et ce r&eacute;pertoire
+<b>doit</b> contenir un fichier nomm&eacute; <font color="#c9211e">__ini__.py</font><font color="#000000">
+qui est le point d&rsquo;entr&eacute;e du module.</font></p>
+<p><font color="#000000">Pour distinguer si un module est import&eacute;
+ou appel&eacute; directement&nbsp;:</font></p>
+<pre class="western" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal"><font color="#404040"><font face="SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, Courier, monospace"><font size="2" style="font-size: 9pt"><font color="#2838b0">if</font><font color="#000000"> </font><font color="#b85820">__name__</font><font color="#000000"> </font><font color="#666666">==</font><font color="#000000"> </font><font color="#b83838">&quot;__main__&quot;</font><font color="#888888">:</font></font></font></font>
+<font color="#404040">    <font color="#888888"><font face="SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, Courier, monospace"><font size="2" style="font-size: 9pt"><i><span style="font-weight: normal"># Il est possible d'ex&eacute;cuter du code pour un module qui est</span></i></font></font></font></font>
+<font color="#404040">    <font color="#888888"><font face="SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, Courier, monospace"><font size="2" style="font-size: 9pt"><i><span style="font-weight: normal"># directement appel&eacute; depuis l'interpr&eacute;teur Python</span></i></font></font></font></font>
+<font color="#404040">    <font color="#2838b0"><font face="SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, Courier, monospace"><font size="2" style="font-size: 9pt"><span style="font-style: normal"><span style="font-weight: normal">pass</span></span></font></font></font></font></pre><p>
+<br/>
+<br/>
+
+</p>
+<p><a href="https://gayerie.dev/docs/python/python3/module.html">https://gayerie.dev/docs/python/python3/module.html</a></p>
+<p>Plus jolie doc&nbsp;:</p>
+<p><a href="https://docs.python.org/fr/3/tutorial/modules.html">https://docs.python.org/fr/3/tutorial/modules.html</a></p>
+<h2 class="western"><a name="__RefHeading___Toc1968_2657004521"></a>2.1Les
+paquets</h2>
+<p>Les modules sont des librairies livr&eacute;es ou install&eacute;es
+avec Python gr&acirc;ce &agrave; <b>pip</b>. Les paquets sont le
+moyen de structurer le code dans diff&eacute;rents r&eacute;pertoires&nbsp;:</p>
+<p><a href="https://docs.python.org/fr/3/tutorial/modules.html#packages">https://docs.python.org/fr/3/tutorial/modules.html#packages</a></p>
+<p>Soit la structure de fichiers&nbsp;:</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">sound/
+                         Top-level package</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><span style="background: #ffffff">     
+<font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt">__init__.py
+              Initialize the sound package</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><span style="background: #ffffff">     
+<font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt">effects/
+                 Subpackage for sound effects</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><span style="background: #ffffff">             
+<font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt">__init__.py		Initialize
+effects package</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><span style="background: #ffffff">             
+<font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt">echo.py</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><span style="background: #ffffff">             
+<font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt">surround.py</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><span style="background: #ffffff">             
+<font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt">reverse.py</span></font></font></font></p>
+<p>			  ...</p>
+<p>Il suffit du fichier __init__.py pour que Python aille chercher
+des fonctions des ces sous-r&eacute;pertoires.</p>
+<p>Les utilisateurs d'un module peuvent importer ses modules
+individuellement, par exemple :</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#0000ff">import</font>
+sound.effects.echo</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<br/>
+
+</p>
+<p>charge le sous-module sound.effects.echo. Il doit alors &ecirc;tre
+r&eacute;f&eacute;renc&eacute; par son nom complet :</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">sound.effects.echo.echofilter(input,
+output, delay=0.7, atten=4)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<br/>
+
+</p>
+<p>Une autre mani&egrave;re d'importer des sous-modules est :</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#0000ff">from</font>
+sound.effects <font color="#0000ff">import</font> echo</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<br/>
+
+</p>
+<p>charge aussi le sous-module echo et le rend disponible sans avoir
+&agrave; indiquer le pr&eacute;fixe du paquet. Il peut donc &ecirc;tre
+utilis&eacute; comme ceci :</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">echo.echofilter(input,
+output, delay=0.7, atten=4)	</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">Pour
+n&rsquo;importer que quelques fonctions d&rsquo;un module&nbsp;:</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#af00db">from</font>
+<font color="#267f99">matplotlib</font>.<font color="#267f99">dates</font>
+<font color="#af00db">import</font> (</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; <font color="#267f99"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">DateFormatter</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">,</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; <font color="#267f99"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">AutoDateLocator</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">,</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; <font color="#795e26"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">datestr2num</span></font></font></font></span></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<br/>
+
+</p>
+<h1 class="western"><a name="__RefHeading___Toc1966_2657004521"></a>3Gestion
+des exceptions</h1>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<font color="#af00db"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#
+import &lsquo;sys&rsquo; to get types of exceptions</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">#</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#af00db">import</font>
+<font color="#267f99">sys</font></span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#001080">randomList</font>
+= [<font color="#a31515">'a'</font>, <font color="#098658">0</font>,
+<font color="#098658">2</font>]</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 0.5cm">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#af00db">for</font>
+<font color="#001080">entry</font> <font color="#0000ff">in</font>
+<font color="#001080">randomList</font>:</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; <font color="#af00db"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">try</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">:</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; &nbsp; &nbsp; <font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">#
+do something</span></font></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; &nbsp; &nbsp; <font color="#795e26"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">print</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">(</span></font></font><font color="#a31515"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">&quot;The
+entry is&quot;</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">,
+</span></font></font><font color="#001080"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">entry</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">)</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; &nbsp; &nbsp; <font color="#001080"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">r</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">
+= </span></font></font><font color="#098658"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">1</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">/</span></font></font><font color="#267f99"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">int</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">(</span></font></font><font color="#001080"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">entry</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">)</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; &nbsp; &nbsp; <font color="#af00db"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">break</span></font></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; <font color="#af00db"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">except</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">
+</span></font></font><font color="#267f99"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">ZeroDivisionError</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">:</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; &nbsp; &nbsp; <font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">#
+handle an exception</span></font></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; &nbsp; &nbsp; <font color="#795e26"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">print</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">(</span></font></font><font color="#a31515"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">&quot;Oops!&quot;</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">,
+</span></font></font><font color="#267f99"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">sys</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">.</span></font></font><font color="#795e26"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">exc_info</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">()[</span></font></font><font color="#098658"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">0</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">],
+</span></font></font><font color="#a31515"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">&quot;occurred.&quot;</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">)</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; &nbsp; &nbsp; <font color="#795e26"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">print</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">(</span></font></font><font color="#a31515"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">&quot;Next
+entry.&quot;</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">)</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; &nbsp; &nbsp; <font color="#795e26"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">print</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">()</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; <font color="#af00db"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">except</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">
+(</span></font></font><font color="#267f99"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">TypeError</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">,
+</span></font></font><font color="#267f99"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">ZeroDivisionError</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">):</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; &nbsp; &nbsp; <font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">#
+handle multiple exceptions</span></font></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; &nbsp; &nbsp; <font color="#af00db"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">pass</span></font></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; <font color="#af00db"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">except</span></font></font></font><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">:</span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; &nbsp; &nbsp; <font color="#008000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">#
+handle all other exceptions</span></font></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 0.5cm"><font color="#000000"><span style="background: #ffffff">&nbsp;
+&nbsp; &nbsp; &nbsp; <font color="#af00db"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="font-weight: normal">pass</span></font></font></font></span></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<br/>
+
+</p>
+<h1 class="western"><a name="__RefHeading___Toc2494_4177601394"></a>4Langage
+Objet</h1>
+<p>Les concepts des langages objet en Python&nbsp;:</p>
+<p><a href="https://www.pierre-giraud.com/python-apprendre-programmer-cours/oriente-objet-heritage-polymorphisme/">https://www.pierre-giraud.com/python-apprendre-programmer-cours/oriente-objet-heritage-polymorphisme/</a></p>
+<p>h&eacute;ritage, surcharge, polymorphisme, h&eacute;ritage
+multiple</p>
+<h1 class="western"><a name="__RefHeading___Toc1978_1790458948"></a>5Objets
+complexes</h1>
+<h2 class="western"><a name="__RefHeading___Toc1980_1790458948"></a>5.1Fichiers
+CSV</h2>
+<p><a href="https://docs.python.org/fr/3/library/csv.html">https://docs.python.org/fr/3/library/csv.html</a></p>
+<h1 class="western"><a name="__RefHeading___Toc436_3690819589"></a>6Les
+IDE Python</h1>
+<p>Pr&eacute;sentation de quelques &eacute;diteurs &hellip; Tous les
+autres sont r&eacute;f&eacute;renc&eacute;s Ici&nbsp;:</p>
+<p><a href="https://wiki.python.org/moin/PythonEditors">https://wiki.python.org/moin/PythonEditors</a></p>
+<h2 class="western"><a name="__RefHeading___Toc438_3690819589"></a>6.1IDLE
+Python</h2>
+<p>Pourquoi IDLE Python et pas IDE Python ?</p>
+<p>IDLE car il d&eacute;pend de la plateforme&hellip; 
+</p>
+<p>IDLE est un environnement de d&eacute;veloppement int&eacute;gr&eacute;
+pour le langage Python. ... Il n'est pas inclus dans le paquet Python
+pour de nombreuses distributions Linux. Il est int&eacute;gralement
+&eacute;crit avec Python et la biblioth&egrave;que graphique Tkinter.</p>
+<p><img src="D%C3%A9couvrir-Python_html_cbccac6f69530931.png" name="Image2" align="left" width="643" height="195" border="0"/>
+<br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">L&rsquo;IDLE permet
+de <b>d&eacute;boguer</b> vos scripts et donne un s&eacute;rie
+d&rsquo;exemples orient&eacute;s graphisme.</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%">Pour d&eacute;boguer
+faire <b>F</b>ile -&gt; <b>O</b>pen&nbsp;: du fichier test1.py</p>
+<p style="margin-bottom: 0cm; line-height: 100%">une nouvelle fen&ecirc;tre
+s&rsquo;ouvre avec le code de test1, faire <b>R</b>un</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><img src="D%C3%A9couvrir-Python_html_dbc020998e50d2de.png" name="Image3" align="left" width="643" height="439" border="0"/>
+<br/>
+
+</p>
+<p>Il y a une faute de frappe dans le script &hellip;.</p>
+<p>Corriger et r&eacute;ex&eacute;cuter.</p>
+<h2 class="western"><a name="__RefHeading___Toc440_3690819589"></a>6.2PyCharm</h2>
+<p>JetBrains</p>
+<p><a href="https://www.jetbrains.com/fr-fr/pycharm/">https://www.jetbrains.com/fr-fr/pycharm/</a></p>
+<p>Deux versions une Pro (essai gratuit) et une Community</p>
+<p>Comparatif entre les deux versions</p>
+<p><a href="https://www.jetbrains.com/fr-fr/pycharm/features/editions_comparison_matrix.html">https://www.jetbrains.com/fr-fr/pycharm/features/editions_comparison_matrix.html</a></p>
+<p><br/>
+<br/>
+
+</p>
+<p><img src="D%C3%A9couvrir-Python_html_446dd36df262191a.png" name="Image5" align="left" width="499" height="388" border="0"/>
+<br/>
+<br/>
+
+</p>
+<p>Les options &agrave; voir, .py c&rsquo;est emb&ecirc;tant si on
+veut que en double-cliquant sur un .py il s&rsquo;ex&eacute;cute avec
+l&rsquo;interpr&eacute;teur.</p>
+<h3 class="western"><a name="__RefHeading___Toc336_3507886099"></a>6.2.1Nouveau
+projet</h3>
+<p>Cr&eacute;ation d&rsquo;un nouveau projet</p>
+<p><img src="D%C3%A9couvrir-Python_html_a6b85598073e0a2.png" name="Image6" align="left" width="643" height="485" border="0"/>
+<br/>
+<br/>
+
+</p>
+<p>On voit bien l&rsquo;int&eacute;gration de cet IDE avec l&rsquo;installe
+de Python, il va chercher l&rsquo;interpr&eacute;teur install&eacute;
+sur la machine.</p>
+<p>L&rsquo;environnement de d&eacute;veloppement&nbsp;:</p>
+<p><img src="D%C3%A9couvrir-Python_html_bd4b8fd8d0c836fe.png" name="Image7" align="left" width="643" height="352" border="0"/>
+<br/>
+<br/>
+
+</p>
+<p>Projet cr&eacute;&eacute; avec la case &agrave; cocher &laquo;&nbsp;create
+welcome script&nbsp;&raquo;</p>
+<p><br/>
+<br/>
+
+</p>
+<h2 class="western"><a name="__RefHeading___Toc442_3690819589"></a>6.3Visual
+Studio Code (VSCode)</h2>
+<p>Moyennant l&rsquo;installation des extensions suivantes&nbsp;:</p>
+<p><img src="D%C3%A9couvrir-Python_html_7c7ed16a53de66ac.png" name="Image4" align="left" width="643" height="408" border="0"/>
+<br/>
+<br/>
+
+</p>
+<p>Pareil, il y a une faute de frappe dans le script &hellip;.</p>
+<p>Corriger et r&eacute;ex&eacute;cuter en cliquant sur le petit
+triangle vert en haut &agrave; droite de la fen&ecirc;tre de VSCode
+c&rsquo;est pratique.</p>
+<p>Vous pouvez &eacute;galement d&eacute;boguer en mettant des points
+d&rsquo;arr&ecirc;ts dans votre code.</p>
+<h3 class="western"><a name="__RefHeading___Toc1303_748003438"></a>6.3.1Installation
+de Pip</h3>
+<p>Pip est un installeur de packages &hellip; pour travailler avec le
+PortSerie, j&rsquo;ai besoin d&rsquo;installer un package.</p>
+<p>Je veux faire&nbsp;:</p>
+<p>&gt;&gt;&gt; pip install pyserial</p>
+<p>Et pour &ccedil;a je dois installer Pip &hellip;</p>
+<p>Je r&eacute;cup&egrave;re le script get-pip.py &agrave; l&rsquo;adresse
+suivante&nbsp;:</p>
+<p><a href="https://bootstrap.pypa.io/get-pip.py">https://bootstrap.pypa.io/get-pip.py</a></p>
+<p>J&rsquo;ai pu l&rsquo;installer en faisant ex&eacute;cution dans
+VSCode du script <b>get-pip.py </b>dans la console python,
+l&rsquo;installeur get-pip.py me dit qu&rsquo;il a install&eacute;
+des trucs dans le r&eacute;pertoire suivant :</p>
+<p><a href="//Users/UserName/AppData/Local/Programs/Python/Python38/Scripts">\\Users\UserName\AppData\Local\Programs\Python\Python38\Scripts</a></p>
+<p>que j&rsquo;ajoute ce chemin dans le PATH de windows alors je peux
+faire :</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Consolas, Courier New, monospace"><font size="2" style="font-size: 10pt"><span style="background: #ffffff"><font color="#0000ff">import</font>&nbsp;serial</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<h3 class="western"><a name="__RefHeading___Toc1315_748003438"></a>6.3.2Module
+d&rsquo;import PySerial</h3>
+<p><a href="https://pyserial.readthedocs.io/en/latest/index.html">https://pyserial.readthedocs.io/en/latest/index.html</a></p>
+<h3 class="western"><a name="__RefHeading___Toc1403_2200775603"></a>6.3.3Modules
+&agrave; d&eacute;couvrir</h3>
+<h4 class="western"><a name="__RefHeading___Toc1405_2200775603"></a>3.3.1Matplotlib</h4>
+<p>Cette librairie permet de tracer des graphes et des graphiques
+elle est inspir&eacute;e de MATLAB. 
+</p>
+<p><a href="https://matplotlib.org/stable/tutorials/index.html">https://matplotlib.org/stable/tutorials/index.html</a></p>
+<p><a href="https://matplotlib.org/stable/users/installing.html">https://matplotlib.org/stable/users/installing.html</a></p>
+<h4 class="western"><a name="__RefHeading___Toc1589_1375522689"></a>3.3.2PyAutoGUI</h4>
+<p>Piloter votre Interface Graphique prenez le contr&ocirc;le de la
+souris, du clavier, faites des copies d&rsquo;&eacute;crans.</p>
+<p>Plus quelques dialoguesBox simples mais pas de OpenFile &hellip;</p>
+<p><a href="https://pyautogui.readthedocs.io/en/latest/">https://pyautogui.readthedocs.io/en/latest/</a></p>
+<h3 class="western"><a name="__RefHeading___Toc1591_1375522689"></a>6.3.4Ex&eacute;cuter
+des scripts</h3>
+<p>Utiliser subprocess au lieu de os.system &hellip; 
+</p>
+<p><a href="https://docs.python.org/3/library/subprocess.html#subprocess-replacements">https://docs.python.org/3/library/subprocess.html#subprocess-replacements</a></p>
+<h1 class="western"><a name="__RefHeading___Toc1275_3798814252"></a><a name="4.R&eacute;f&eacute;rences|outline"></a>
+7R&eacute;f&eacute;rences</h1>
+<p>La documentation officielle&nbsp;:</p>
+<p><a href="https://docs.python.org/3/">https://docs.python.org/3/</a></p>
+<p>En fran&ccedil;ais&nbsp;:</p>
+<p><a href="https://docs.python.org/fr/3/reference/index.html">https://docs.python.org/fr/3/reference/index.html</a></p>
+<p><br/>
+<br/>
+
+</p>
+<p>Language&rsquo;s References&nbsp;:</p>
+<p><a href="https://docs.python.org/3/reference/index.html">https://docs.python.org/3/reference/index.html</a></p>
+<p><br/>
+<br/>
+
+</p>
+<p>Cours de Python 3.x</p>
+<p><a href="https://gayerie.dev/docs/python/index.html">https://gayerie.dev/docs/python/index.html</a></p>
+<p><br/>
+<br/>
+
+</p>
+<p>Sur le m&eacute;thodes sp&eacute;ciales&nbsp;:</p>
+<p><a href="https://gayerie.dev/docs/python/python3/dunder.html">https://gayerie.dev/docs/python/python3/dunder.html</a></p>
+<p><br/>
+<br/>
+
+</p>
+<p>Tutorials and Samples</p>
+<ul>
+	<li><p>tr&egrave;s simple d&eacute;butant</p>
+</ul>
+<p><a href="http://www.python-simple.com/">http://www.python-simple.com/</a></p>
+<ul>
+	<li><p>tr&egrave;s complet</p>
+</ul>
+<p><a href="https://www.programiz.com/python-programming">https://www.programiz.com/python-programming</a></p>
+<ul>
+	<li><p>total</p>
+</ul>
+<p><a href="https://docs.python.org/fr/3/tutorial/">https://docs.python.org/fr/3/tutorial/</a></p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<div title="footer"><p align="right" style="margin-top: 0.5cm; margin-bottom: 0cm; line-height: 100%">
+	<sdfield type=PAGE subtype=RANDOM format=PAGE>2</sdfield>/<sdfield type=DOCSTAT subtype=PAGE format=PAGE>23</sdfield></p>
+</div>
+</body>
+</html>
