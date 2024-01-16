@@ -1,12 +1,10 @@
-[Syntaxe Markdown](https://www.markdownguide.org/basic-syntax/)
-
 As the name says, it's to discover python language. You have a documentation **Découvrir-python.odt** in french only aim is not to be a sum, but to discover or retreive most quickly your mark in **python**
+
+[Download Dicovering Python](./Découvrir-Python.odt)
 
 Html Documentation thanks to LibreOffice
 - open Découvrir-python.odt
 - say save as choose html and doc directory
-
-[Dicovering Python](./doc/Découvrir-Python.html)
 
 ## *** tkinterDialogBox
 
