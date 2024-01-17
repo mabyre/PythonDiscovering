@@ -4,9 +4,15 @@
 # Very tuff sample to updated, many problems to solve in compare to the original
 # After had solved many problems it works
 #
+# Install
+# -------
+# >pip install matplotlib
+# >pip install mplfinance
+#
 # Aim is to use candlestick_ohlc to plot a candle stick graph
 #
-# Chez boursorama dans le grapqhique du cours de l'action, il y a un bouton télécharger.
+# At boursorama in the stock price graph, there is a download button, 
+# this is where I retrieve the data files
 #
 #
 from datetime import datetime
@@ -25,13 +31,13 @@ print(plt.style.available)
 print(plt.__file__)
 
 # Should be choosen inside signal, means less than over the end
-MA1 = 10
-MA2 = 30
-filename = r'.\datas\VALNEVA_2022-11-24.txt'
+# MA1 = 10
+# MA2 = 30
+# filename = r'.\datas\VALNEVA_2022-11-24.txt'
 
-# MA1 = 5
-# MA2 = 15
-# filename = r'.\datas\CARMAT_2022-12-12.txt'
+MA1 = 5
+MA2 = 15
+filename = r'.\datas\CARMAT_2024-01-16.txt'
 
 
 def moving_average(values, window):

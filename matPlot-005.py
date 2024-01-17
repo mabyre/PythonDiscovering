@@ -1,5 +1,9 @@
 """ matPlot-0xx series will lead us to predictive of linear series
 
+    # install
+    >pip install scikit-learn
+    >pip install keras
+
     https://keras.io/guides/
     LSTM: Long Short-Term Memory
 

@@ -6,6 +6,13 @@ Html Documentation thanks to LibreOffice
 - open Découvrir-python.odt
 - say save as choose html and doc directory
 
+## Install
+
+have a look to the section install in Découvrir-Python.odt
+
+in matplot-005 i got serious problems with keras needed to install 
+
+
 ## *** tkinterDialogBox
 
 open a dialog box with tinker
@@ -22,6 +29,15 @@ put it in the path
 try data scientist model on linear series ... using pandas, sklearn, tensorflow, keras
 
 <img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matPlot-005.png" alt="Using keras data scientist model" height="250" />
+
+### install keras
+
+into :
+
+C:\Users\Mabyre\AppData\Local\Programs\Python\Python312
+
+>py -m venv keras
+
 
 ## *** matplot-004.py
 
