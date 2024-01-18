@@ -177,15 +177,15 @@ plt.ylabel(f'{COMPAGNY} share price')
 plt.legend
 plt.show()
 
-# # Predict data for tomorrow using real data
-# #
-# all_days = len(closep)
-# real_data = []
-# for x in range(0, all_days):
-#     real_data.append(closep[x])
+# Predict data for tomorrow using real data
+#
+all_days = len(closep)
+real_data = []
+for x in range(0, all_days):
+    real_data.append(closep)
 
-# real_data = numpy.array(real_data)
-# real_data = numpy.reshape(real_data, (all_days, 0, 1))
+real_data = numpy.array(real_data)
+real_data = numpy.reshape(real_data, (real_data.shape[0], real_data.shape[1], 1))
 
 # prediction = model.predict(real_data)
 # prediction = scaler.inverse_transform(prediction)
