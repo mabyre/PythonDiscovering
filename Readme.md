@@ -2,16 +2,19 @@ As the name says, it's to discover python language. You have a documentation **D
 
 [Download Dicovering Python](./Découvrir-Python.odt)
 
-Html Documentation thanks to LibreOffice
+Html Documentation thanks to [LibreOffice](https://www.libreoffice.org/download/download-libreoffice/)
 - open Découvrir-python.odt
-- say save as choose html and doc directory
+- say save as choose html and doc directory [doc](./doc)
 
 ## Install
 
-have a look to the section install in Découvrir-Python.odt
+Have a look to the section **Installation** in Découvrir-Python.odt
 
-in matplot-005 i got serious problems with keras needed to install 
+in matplot-005 i got serious problems with keras needed to install other version of python language
 
+## *** versionModule
+
+run this python script to look at what is installed on your machine
 
 ## *** tkinterDialogBox
 
@@ -21,7 +24,7 @@ with file user choice
 ## *** get-pip.py
 
 allows to install the PIP package installer in the directory
-\\\Users\UserName\AppData\Local\Programs\Python\Python38\Scripts
+\\\Users\userxxx\AppData\Local\Programs\Python\Python38\Scripts
 put it in the path
 
 ## *** matplot-005.py
