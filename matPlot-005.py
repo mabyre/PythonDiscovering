@@ -1,9 +1,26 @@
-""" matPlot-0xx series will lead us to predictive of linear series
+"""matPlot-0xx series will lead us to predictive of linear series
+
+    # install python 3.11.1
+    C:\\Users\\userxxx\\AppData\\Local\\Programs\\Python\\Python311
 
     # install
     >pip install scikit-learn
-    >pip install keras
+    NO : >pip install keras tensorFlow will uninstall this version to resintall his own
+    >pip install tensorflow
+    
+    Version de Python :3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]
+    numpy: 1.26.3
+    pandas: 2.1.4
+    sklearn: 1.3.2
 
+    Keras: 2.15.0
+    Tensorflow: 2.15.0
+    
+    Difficulties to install keras and tensorflow somedays keras is integrated to tensorflow somedays installing keras crashed due to tensorflow chatgpt says there is no version of tensorflow copatible with pyhton 3.12 grrrr
+    
+    https://stackoverflow.com/questions/77236398/issue-installing-tensorflow-on-windows-11-with-python-3-12-0
+    TensorFlow currently support python 3.11 so try downgrading your python edition 
+    
     https://keras.io/guides/
     LSTM: Long Short-Term Memory
 
@@ -25,7 +42,6 @@
     https://matplotlib.org/stable/gallery/color/named_colors.html#css-colors
     Get nice colors for graph
 """
-
 from datetime import datetime
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates

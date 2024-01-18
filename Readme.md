@@ -24,20 +24,17 @@ allows to install the PIP package installer in the directory
 \\\Users\UserName\AppData\Local\Programs\Python\Python38\Scripts
 put it in the path
 
-## ***matplot-005.py
+## *** matplot-005.py
 
 try data scientist model on linear series ... using pandas, sklearn, tensorflow, keras
 
 <img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matPlot-005.png" alt="Using keras data scientist model" height="250" />
 
-### install keras
+### TensorFlow not already support Python 3.12
 
-into :
+only avalaible on pyhton 3.11
 
-C:\Users\Mabyre\AppData\Local\Programs\Python\Python312
-
->py -m venv keras
-
+<img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matPlot-005.1.png" alt="Using keras data scientist model" height="250" />
 
 ## *** matplot-004.py
 
