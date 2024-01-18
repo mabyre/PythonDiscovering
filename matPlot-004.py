@@ -23,7 +23,6 @@ from mplfinance.original_flavor import candlestick_ohlc
 from matplotlib import style
 
 import numpy
-import urllib
 import datetime as dt
 
 style.use('fivethirtyeight')

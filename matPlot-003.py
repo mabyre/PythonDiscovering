@@ -14,7 +14,6 @@ import matplotlib.ticker as mticker
 from matplotlib import style
 
 import numpy
-import urllib
 import datetime as dt
 
 style.use('fivethirtyeight')
