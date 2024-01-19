@@ -43,6 +43,8 @@
 
     https://matplotlib.org/stable/gallery/color/named_colors.html#css-colors
     Get nice colors for graph
+    
+    Thanks to chatgpt ;)
 """
 from datetime import datetime
 import matplotlib.pyplot as plt
@@ -71,6 +73,10 @@ filename = r'.\datas\VALNEVA_2022-11-24.txt'
 
 COMPAGNY = 'VALNEVA'
 
+# how many days we want to look at the past to predict
+prediction_days = 40
+
+# ------------
 
 def bytespdate2num(fmt, encoding='utf-8'):
     def bytesconverter(b):
@@ -105,9 +111,6 @@ assert len(date) == y, "Error in reading file"
 # ------------
 scaler = MinMaxScaler(feature_range=(0, 1))
 scaled_data = scaler.fit_transform(numpy.reshape(closep, (-1, 1)))
-
-# how many days we want to look at the past to predict
-prediction_days = 20
 
 # defining two empty lists for preparing the training data
 x_train = []
@@ -164,6 +167,7 @@ model_input = scaler.transform(model_input)
 # Predict data for tomorrow
 # -------------------------
 # split data into windows
+#
 x_test = []
 for x in range(prediction_days, len(model_input)):
     x_test.append(model_input[x-prediction_days:x, 0])
@@ -174,11 +178,30 @@ x_test = numpy.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
 predicted_price = model.predict(x_test)
 predicted_price = scaler.inverse_transform(predicted_price)
 
+# --------------------------
+# make the prediction
+#
+all_days = len(closep)
+
+real_data = numpy.array(closep)
+real_data = numpy.reshape(real_data, (all_days, 1 , 1))
+
+prediction = model.predict(real_data)
+prediction = scaler.inverse_transform(prediction)
+
+# print(f"Prediction: {prediction}")
+
+prediction2 = prediction[all_days - 1]
+
+print(f"Prediction: {prediction2}")
+
 # plot the test Predictions
 plt.plot(actual_prices, color='midnightblue', label=f"Actual {COMPAGNY} price")
 plt.plot(predicted_price, color='green', label=f"Predicted {COMPAGNY} Price")
-plt.title(f"{COMPAGNY} share price")
-plt.xlabel('Time')
+plt.scatter(all_days, prediction2, color='red', label=f"Prediction2", marker='s')
+plt.plot(prediction, color='orangered', label=f"Prediction")
+plt.title(f"{COMPAGNY} predic days {prediction_days}")
+plt.xlabel('Days')
 plt.ylabel(f'{COMPAGNY} share price')
 plt.legend
 plt.show()
