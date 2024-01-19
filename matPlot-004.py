@@ -1,34 +1,38 @@
-#
-# https://pythonprogramming.net/fill-pruning-matplotlib-tutorial/
-#
-# Very tuff sample to updated, many problems to solve in compare to the original
-# After had solved many problems it works
-#
-# Install
-# -------
-# >pip install matplotlib
-# >pip install mplfinance
-#
-# Aim is to use candlestick_ohlc to plot a candle stick graph
-#
-# At boursorama in the stock price graph, there is a download button, 
-# this is where I retrieve the data files
-#
-#
-from datetime import datetime
+""" Use candlestick_ohlc of mplfinance module
+
+    https://pythonprogramming.net/fill-pruning-matplotlib-tutorial/
+
+    Very tuff sample to updated, many problems to solve in compare to the original
+    After had solved many problems it works
+
+    Install
+    -------
+    >pip install matplotlib
+    >pip install mplfinance
+
+    Aim is to use candlestick_ohlc to plot a candle stick graph
+
+    At boursorama in the stock price graph, there is a download button, 
+    this is where I retrieve the data files
+"""
+import numpy
+import datetime as dt
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import matplotlib.ticker as mticker
+
+from datetime import datetime
 from mplfinance.original_flavor import candlestick_ohlc
 from matplotlib import style
 
-import numpy
-import datetime as dt
 
 style.use('fivethirtyeight')
 print(plt.style.available)
 print(plt.__file__)
 
+# ------------
+# User choices
+# ------------
 # Should be choosen inside signal, means less than over the end
 # MA1 = 10
 # MA2 = 30
@@ -38,6 +42,7 @@ MA1 = 5
 MA2 = 15
 filename = r'.\datas\CARMAT_2024-01-16.txt'
 
+# ------------
 
 def moving_average(values, window):
     weights = numpy.repeat(1.0, window)/window
@@ -89,13 +94,13 @@ def graph_data(stock):
                                                                  0, 1, 2, 3, 4, 5),
                                                              converters={0: bytespdate2num('%d/%m/%Y %H:%M')})
 
-    x = 0
+    # Sanity check
     y = len(date)
     y1 = len(openp)
-
     assert y == y1, "Error in reading file"
 
     # Let's create OHLC
+    x = 0
     ohlc = []
     while x < y:
         append_me = date[x], openp[x], highp[x], lowp[x], closep[x], volume[x]
