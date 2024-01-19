@@ -33,7 +33,7 @@ try data scientist model on linear series ... using pandas, sklearn, tensorflow,
 
 <img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matPlot-005.png" alt="Using keras data scientist model" height="250" />
 
-### TensorFlow not already support Python 3.12
+### *** TensorFlow not already support Python 3.12
 
 only avalaible on pyhton 3.11
 
