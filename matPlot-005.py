@@ -1,11 +1,11 @@
-"""matPlot-0xx series will lead us to predictive of linear series
+""" matPlot-0xx series will lead us to predictive of linear series
 
     # install python 3.11.1
     C:\\Users\\userxxx\\AppData\\Local\\Programs\\Python\\Python311
 
     # install
     >pip install scikit-learn
-    NO : >pip install keras tensorFlow will uninstall this version to resintall his own
+    NO: >pip install keras tensorFlow will uninstall this version to resintall his own
     >pip install tensorflow
     
     Version de Python :3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]
@@ -31,11 +31,13 @@
     Convert a NumPy array to a Pandas series
 
     https://geekyhumans.com/how-to-predict-us-stock-price-using-python/
+    How to predict US Stock Price using Python?
     https://geekyhumans.com/fr/prediction-boursiere-avec-python/
-    Prédiction boursière avec Python
+    French: Prédiction boursière avec Python
 
     https://clemovernet.wordpress.com/2020/01/01/tensorflow-2-prediction-dun-cours-de-bourse-version-simple/
     Some other example of using keras.models.Sequential
+    Explain the split data into windows
 
     https://github.com/JosueAfouda/Analyse-quantitative/blob/master/Prediction%20du%20prix%20des%20actions.ipynb
 
@@ -60,6 +62,10 @@ print(plt.style.available)
 
 print(plt.__file__)
 
+# ------------
+# User choices
+# ------------
+#
 filename = r'.\datas\VALNEVA_2022-11-24.txt'
 #filename = r'.\datas\CARMAT_2022-12-12.txt'
 
@@ -85,15 +91,13 @@ date, openp, highp, lowp, closep, volume = numpy.loadtxt(filename,
                                                          delimiter='\t',
                                                          skiprows=1,  # first line is column's names
                                                          unpack=True,
-                                                         usecols=(
-                                                             0, 1, 2, 3, 4, 5),
+                                                         usecols=(0, 1, 2, 3, 4, 5),
                                                          converters={0: bytespdate2num('%d/%m/%Y %H:%M')})
 
 
 # Sanity check
 y = len(openp)
 print(f'signal weight: {y}')
-
 assert len(date) == y, "Error in reading file"
 
 # ------------
@@ -131,6 +135,7 @@ model.add(LSTM(units=50))
 model.add(Dropout(DROP_OUT_RATE))
 # this is going to be a prediction of the next closing value
 model.add(Dense(units=1))
+
 print(model.summary())
 
 # Complete model
@@ -158,6 +163,7 @@ model_input = scaler.transform(model_input)
 # -------------------------
 # Predict data for tomorrow
 # -------------------------
+# split data into windows
 x_test = []
 for x in range(prediction_days, len(model_input)):
     x_test.append(model_input[x-prediction_days:x, 0])
@@ -176,25 +182,3 @@ plt.xlabel('Time')
 plt.ylabel(f'{COMPAGNY} share price')
 plt.legend
 plt.show()
-
-# Predict data for tomorrow using real data
-#
-all_days = len(closep)
-real_data = []
-for x in range(0, all_days):
-    real_data.append(closep)
-
-real_data = numpy.array(real_data)
-real_data = numpy.reshape(real_data, (real_data.shape[0], real_data.shape[1], 1))
-
-# prediction = model.predict(real_data)
-# prediction = scaler.inverse_transform(prediction)
-
-# # Plot the Predictions
-# plt.plot(actual_prices, color='midnightblue', label=f"Actual {COMPAGNY} price")
-# plt.plot(prediction, color='green', label=f"Predicted {COMPAGNY} Price")
-# plt.title(f"{COMPAGNY} share price")
-# plt.xlabel('Time')
-# plt.ylabel(f'{COMPAGNY} share price')
-# plt.legend
-# plt.show()
