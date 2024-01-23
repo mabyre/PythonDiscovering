@@ -50,7 +50,7 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import matplotlib.ticker as mticker
-import numpy
+import numpy as np
 import pandas
 
 from matplotlib import style
@@ -67,7 +67,8 @@ print(plt.__file__)
 # ------------
 # User choices
 # ------------
-#
+# variables the user can choice
+# 
 fileName = r'.\datas\CARMAT_2024-01-19 (1).txt'
 
 compagnyName = 'CARMAT_2024'
@@ -92,7 +93,7 @@ def bytespdate2num(fmt, encoding='utf-8'):
 # and load colums as <class 'numpy.ndarray'>
 # Colums you'll find in file
 #
-date, openp, highp, lowp, closep, volume = numpy.loadtxt(fileName,
+date, openp, highp, lowp, closep, volume = np.loadtxt(fileName,
                                                          delimiter='\t',
                                                          skiprows=1,  # first line is column's names
                                                          unpack=True,
@@ -109,7 +110,7 @@ assert len(date) == y, "Error in reading file"
 # Prepare data
 # ------------
 scaler = MinMaxScaler(feature_range=(0, 1))
-scaled_data = scaler.fit_transform(numpy.reshape(closep, (-1, 1)))
+scaled_data = scaler.fit_transform(np.reshape(closep, (-1, 1)))
 
 # defining two empty lists for preparing the training data
 x_train = []
@@ -120,8 +121,8 @@ for x in range(prediction_days, len(scaled_data)):
     x_train.append(scaled_data[x-prediction_days:x, 0])
     y_train.append(scaled_data[x, 0])
 
-x_train, y_train = numpy.array(x_train), numpy.array(y_train)
-x_train = numpy.reshape(x_train, (x_train.shape[0], x_train.shape[1], 1))
+x_train, y_train = np.array(x_train), np.array(y_train)
+x_train = np.reshape(x_train, (x_train.shape[0], x_train.shape[1], 1))
 
 # ---------------
 # Construct model
@@ -171,8 +172,8 @@ x_test = []
 for x in range(prediction_days, len(model_input)):
     x_test.append(model_input[x-prediction_days:x, 0])
 
-x_test = numpy.array(x_test)
-x_test = numpy.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
+x_test = np.array(x_test)
+x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
 
 predicted_price = model.predict(x_test)
 predicted_price = scaler.inverse_transform(predicted_price)
@@ -182,8 +183,8 @@ predicted_price = scaler.inverse_transform(predicted_price)
 #
 all_days = len(closep)
 
-real_data = numpy.array(closep)
-real_data = numpy.reshape(real_data, (all_days, 1 , 1))
+real_data = np.array(closep)
+real_data = np.reshape(real_data, (all_days, 1 , 1))
 
 prediction = model.predict(real_data)
 prediction = scaler.inverse_transform(prediction)
