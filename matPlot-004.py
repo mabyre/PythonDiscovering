@@ -40,7 +40,10 @@ print(plt.__file__)
 
 MA1 = 5
 MA2 = 15
-filename = r'.\datas\CARMAT_2024-01-16.txt'
+fileName = r'.\datas\CARMAT_2024-01-16.txt'
+
+compagnyName = 'CARMAT_2024-01-16'
+
 
 # ------------
 
@@ -86,12 +89,11 @@ def graph_data(stock):
 
     # Colums you'll find in file
     #
-    date, openp, highp, lowp, closep, volume = numpy.loadtxt(filename,
+    date, openp, highp, lowp, closep, volume = numpy.loadtxt(fileName,
                                                              delimiter='\t',
                                                              skiprows=1,  # first line is column's names
                                                              unpack=True,
-                                                             usecols=(
-                                                                 0, 1, 2, 3, 4, 5),
+                                                             usecols=(0, 1, 2, 3, 4, 5),
                                                              converters={0: bytespdate2num('%d/%m/%Y %H:%M')})
 
     # Sanity check
@@ -164,6 +166,6 @@ def graph_data(stock):
     plt.show()
 
 
-graph_data('VALNEVA')
+graph_data(compagnyName)
 
 print('Program ending...')

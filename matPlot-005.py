@@ -68,13 +68,12 @@ print(plt.__file__)
 # User choices
 # ------------
 #
-filename = r'.\datas\VALNEVA_2022-11-24.txt'
-#filename = r'.\datas\CARMAT_2022-12-12.txt'
+fileName = r'.\datas\CARMAT_2024-01-19 (1).txt'
 
-COMPAGNY = 'VALNEVA'
+compagnyName = 'CARMAT_2024'
 
 # how many days we want to look at the past to predict
-prediction_days = 40
+prediction_days = 60
 
 # ------------
 
@@ -93,7 +92,7 @@ def bytespdate2num(fmt, encoding='utf-8'):
 # and load colums as <class 'numpy.ndarray'>
 # Colums you'll find in file
 #
-date, openp, highp, lowp, closep, volume = numpy.loadtxt(filename,
+date, openp, highp, lowp, closep, volume = numpy.loadtxt(fileName,
                                                          delimiter='\t',
                                                          skiprows=1,  # first line is column's names
                                                          unpack=True,
@@ -196,12 +195,12 @@ prediction2 = prediction[all_days - 1]
 print(f"Prediction: {prediction2}")
 
 # plot the test Predictions
-plt.plot(actual_prices, color='midnightblue', label=f"Actual {COMPAGNY} price")
-plt.plot(predicted_price, color='green', label=f"Predicted {COMPAGNY} Price")
+plt.plot(actual_prices, color='midnightblue', label=f"Actual {compagnyName} price")
+plt.plot(predicted_price, color='green', label=f"Predicted {compagnyName} Price")
 plt.scatter(all_days, prediction2, color='red', label=f"Prediction2", marker='s')
 plt.plot(prediction, color='orangered', label=f"Prediction")
-plt.title(f"{COMPAGNY} predic days {prediction_days}")
+plt.title(f"{compagnyName} predic days {prediction_days}")
 plt.xlabel('Days')
-plt.ylabel(f'{COMPAGNY} share price')
+plt.ylabel(f'{compagnyName} share price')
 plt.legend
 plt.show()
