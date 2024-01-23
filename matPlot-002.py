@@ -27,5 +27,6 @@ plt.title('MySample')
 plt.ylabel('axe Y')
 plt.xlabel('axe X')
 plt.legend()
+plt.grid(True, linestyle='--', linewidth=0.5, color='gray')
 
 plt.show()
