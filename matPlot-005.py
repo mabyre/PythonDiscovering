@@ -69,12 +69,12 @@ print(plt.__file__)
 # ------------
 # variables the user can choice
 # 
-fileName = r'.\datas\CARMAT_2024-01-19 (1).txt'
+FILE_NAME = r'.\datas\CARMAT_2024-01-19 (1).txt'
 
-compagnyName = 'CARMAT_2024'
+COMPAGNY_NAME = 'CARMAT_2024'
 
 # how many days we want to look at the past to predict
-prediction_days = 60
+PREDICTION_DAYS = 60
 
 # ------------
 
@@ -93,12 +93,14 @@ def bytespdate2num(fmt, encoding='utf-8'):
 # and load colums as <class 'numpy.ndarray'>
 # Colums you'll find in file
 #
-date, openp, highp, lowp, closep, volume = np.loadtxt(fileName,
-                                                         delimiter='\t',
-                                                         skiprows=1,  # first line is column's names
-                                                         unpack=True,
-                                                         usecols=(0, 1, 2, 3, 4, 5),
-                                                         converters={0: bytespdate2num('%d/%m/%Y %H:%M')})
+date, openp, highp, lowp, closep, volume = np.loadtxt(
+    FILE_NAME,
+    delimiter='\t',
+    skiprows=1,  # first line is column's names
+    unpack=True,
+    usecols=(0, 1, 2, 3, 4, 5),
+    converters={0: bytespdate2num('%d/%m/%Y %H:%M')}
+)
 
 
 # Sanity check
@@ -117,8 +119,8 @@ x_train = []
 y_train = []
 
 # we are counting from the prediction_days'th index to the last index
-for x in range(prediction_days, len(scaled_data)):
-    x_train.append(scaled_data[x-prediction_days:x, 0])
+for x in range(PREDICTION_DAYS, len(scaled_data)):
+    x_train.append(scaled_data[x-PREDICTION_DAYS:x, 0])
     y_train.append(scaled_data[x, 0])
 
 x_train, y_train = np.array(x_train), np.array(y_train)
@@ -129,7 +131,7 @@ x_train = np.reshape(x_train, (x_train.shape[0], x_train.shape[1], 1))
 # ---------------
 DROP_OUT_RATE = 0.3
 model = Sequential()
-# specify the layers
+# specify the layers LSTM (Long Short-Term Memory)
 model.add(LSTM(units=50, return_sequences=True, input_shape=(x_train.shape[1], 1)))
 model.add(Dropout(DROP_OUT_RATE))
 model.add(LSTM(units=50, return_sequences=True))
@@ -141,7 +143,7 @@ model.add(Dense(units=1))
 
 print(model.summary())
 
-# Complete model
+# Compile model (necessary before training or prediction)
 model.compile(optimizer='adam', loss='mean_squared_error')
 # fit the model in the training data
 model.fit(x_train, y_train, epochs=25, batch_size=32)
@@ -157,7 +159,7 @@ test_closep = pandas.Series(closep)
 actual_prices = test_closep
 total_dataset = pandas.concat((test_closep, test_closep), axis=0)
 
-model_input = total_dataset[len(total_dataset) - len(test_closep) - prediction_days:].values
+model_input = total_dataset[len(total_dataset) - len(test_closep) - PREDICTION_DAYS:].values
 # reshaping the model
 model_input = model_input.reshape(-1, 1)
 # scaling down the model
@@ -169,8 +171,8 @@ model_input = scaler.transform(model_input)
 # split data into windows
 #
 x_test = []
-for x in range(prediction_days, len(model_input)):
-    x_test.append(model_input[x-prediction_days:x, 0])
+for x in range(PREDICTION_DAYS, len(model_input)):
+    x_test.append(model_input[x-PREDICTION_DAYS:x, 0])
 
 x_test = np.array(x_test)
 x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
@@ -191,17 +193,18 @@ prediction = scaler.inverse_transform(prediction)
 
 # print(f"Prediction: {prediction}")
 
+# take last point as prediction
 prediction2 = prediction[all_days - 1]
 
 print(f"Prediction: {prediction2}")
 
 # plot the test Predictions
-plt.plot(actual_prices, color='midnightblue', label=f"Actual {compagnyName} price")
-plt.plot(predicted_price, color='green', label=f"Predicted {compagnyName} Price")
+plt.plot(actual_prices, color='midnightblue', label=f"Actual {COMPAGNY_NAME} price")
+plt.plot(predicted_price, color='green', label=f"Predicted {COMPAGNY_NAME} Price")
 plt.scatter(all_days, prediction2, color='red', label=f"Prediction2", marker='s')
 plt.plot(prediction, color='orangered', label=f"Prediction")
-plt.title(f"{compagnyName} predic days {prediction_days}")
+plt.title(f"{COMPAGNY_NAME} predic days {PREDICTION_DAYS}")
 plt.xlabel('Days')
-plt.ylabel(f'{compagnyName} share price')
+plt.ylabel(f'{COMPAGNY_NAME} share price')
 plt.legend
 plt.show()
