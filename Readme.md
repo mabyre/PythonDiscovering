@@ -114,3 +114,10 @@ a way to make a clearScreen, then to print some informations before starting a p
 * fundamental package for scientific computing in Python:
   * <https://numpy.org/doc/stable/>
 
+
+# Forecasting: Principles and Practice
+
+You really want to be a data-scientist 
+
+* read and read this again the art of forecasting
+  * <https://otexts.com/>
