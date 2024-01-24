@@ -12,74 +12,73 @@ Have a look to the section **Installation** in Découvrir-Python.odt
 
 in matplot-005 i got serious problems with keras needed to install other version of python language
 
-## *** versionModule
 
 run this python script to look at what is installed on your machine
 
-## *** tkinterDialogBox
+## tkinterDialogBox.oy
 
 open a dialog box with tinker
 with file user choice
 
-## *** get-pip.py
+## get-pip.py
 
 allows to install the PIP package installer in the directory
 \\\Users\userxxx\AppData\Local\Programs\Python\Python38\Scripts
 put it in the path
 
-## *** matplot-005.py
+## matplot-005.py
 
 try data scientist model on linear series ... using pandas, sklearn, tensorflow, keras
 
 <img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matPlot-005.png" alt="Using keras data scientist model" height="250" />
 
-### *** TensorFlow not already support Python 3.12
+### TensorFlow not already support Python 3.12
 
 only avalaible on pyhton 3.11
 
 <img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matPlot-005.1.png" alt="Using keras data scientist model" height="250" />
 
-## *** matplot-004.py
+## matplot-004.py
 
 use of **candlestick_ohlc** updated to display financial graphics using matplot and mplfinance.original_flavor
 
 <img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matplotlib-valneva-finace.png" alt="Finance graph with mplfinance" height="250" />
 
-## *** matplot-003.py
+## matplot-003.py
 
 use the boursorama data file to display only a graph, show how to use date on x axe
 
 <img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matPlot-003.png" alt="using datestr2num converter" height="250" />
 
-## *** matPlotSample.py
+## matPlotSample.py
 
 use the librairy matplotlib.pyplot inspired from MATLAB
 
-## *** regexSample.py
+## regexSample.py
 
 example using regex regular expression
 
-## *** compactParam.py
+## compactParam.py
 
 more than one parameter passed to a function just stuning
 
-## *** listTuple.py
+## listTuple.py
 
 dicovering python language
 
-## *** chaineFormat.py
+## chaineFormat.py
 
 example used in document Découvrir-python (french only)
 
-## *** useShape.py
+## useShape.py
 
 demonstrate how to create modular function declared in directory **module**
 
-## *** useVector.py
+## useVector.py
 
 the use of Vector class defined in \\\module\Vector.py file
 
-## *** pythonStartup.py
+## pythonStartup.py
 
 a way to make a clearScreen, then to print some informations before starting a python program
 
