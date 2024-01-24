@@ -95,21 +95,22 @@ a way to make a clearScreen, then to print some informations before starting a p
 
 **Hope you enjoy python as I do!**
 
-## My python references
+# My python references
 
-* <https://docs.python.org/fr/3/index.html>
-  * reference site python
+* reference site python:
+  * <https://docs.python.org/fr/3/index.html>
 
-* <https://python-course.eu/>
-  * very conmpleted cours in python
+* very conmpleted cours in python:
+  * <https://python-course.eu/>
 
-* <https://www.geeksforgeeks.org/python-programming-examples/>
-  * python samples
+* python samples:
+  * <https://www.geeksforgeeks.org/python-programming-examples/>
 
-## Python's Library
+# Python's Library
 
-* <https://matplotlib.org/>
-  * one of the best display library ever, many samples, everything  you need
+* one of the best display library ever, many samples, everything  you need:
+  * <https://matplotlib.org/>
 
-* <https://numpy.org/doc/stable/>
-  * fundamental package for scientific computing in Python
+* fundamental package for scientific computing in Python:
+  * <https://numpy.org/doc/stable/>
+
