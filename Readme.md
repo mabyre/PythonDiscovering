@@ -10,8 +10,13 @@ Html Documentation thanks to [LibreOffice](https://www.libreoffice.org/download/
 
 Have a look to the section **Installation** in Découvrir-Python.odt
 
-in matplot-005 i got serious problems with keras needed to install other version of python language
+in [matplot-005.py](#matplot-005py) i got serious problems with keras needed to install other version of python language
 
+## pandasReadCsv-000.py
+
+**pandas** is better than **numpy** for reading data
+
+## versionModule.py
 
 run this python script to look at what is installed on your machine
 
@@ -34,7 +39,7 @@ try data scientist model on linear series ... using pandas, sklearn, tensorflow,
 
 ### TensorFlow not already support Python 3.12
 
-only avalaible on pyhton 3.11
+only avalaible on pyhton 3.11 - discover **Python Environnement Management** to make two versions of python coexist
 
 <img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matPlot-005.1.png" alt="Using keras data scientist model" height="250" />
 
@@ -82,7 +87,7 @@ the use of Vector class defined in \\\module\Vector.py file
 
 a way to make a clearScreen, then to print some informations before starting a python program
 
-**Hope you enjoy as I do!**
+**Hope you enjoy python as I do!**
 
 ## My python references
 
