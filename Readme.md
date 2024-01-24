@@ -12,6 +12,12 @@ Have a look to the section **Installation** in Découvrir-Python.odt
 
 in [matplot-005.py](#matplot-005py) i got serious problems with keras needed to install other version of python language
 
+## matPlot-006.py
+
+pandas is more efficient then numpy to read data frame
+
+<img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matplot-006.png" alt="Using keras data scientist model" height="250" />
+
 ## pandasReadCsv-000.py
 
 **pandas** is better than **numpy** for reading data
