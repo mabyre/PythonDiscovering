@@ -10,7 +10,7 @@ FILE_NAME = r'.\datas\CARMAT_2024-01-19 (1).txt'
 # Read data in DataFrame df
 df = pd.read_csv(FILE_NAME, sep='\t', parse_dates=['date'])
 
-# Cool way yo read file's data 
+# Cool way yo read file's data then to print
 print(df)
 
 # -------------
