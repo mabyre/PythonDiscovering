@@ -143,9 +143,10 @@ model.add(Dense(units=1))
 
 print(model.summary())
 
-# Compile model (necessary before training or prediction)
+# Compile model before training or prediction
 model.compile(optimizer='adam', loss='mean_squared_error')
-# fit the model in the training data
+
+# Fit the model in the training data
 model.fit(x_train, y_train, epochs=25, batch_size=32)
 
 # Evaluate the trained model should be done with x_test
