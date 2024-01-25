@@ -61,6 +61,10 @@ use the boursorama data file to display only a graph, show how to use date on x 
 
 <img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matPlot-003.png" alt="using datestr2num converter" height="250" />
 
+## numpySample-001.py
+
+playing with NumPy convolve to calculate moving average 'valid' 'same' and 'full'
+
 ## matPlotSample.py
 
 use the librairy matplotlib.pyplot inspired from MATLAB
