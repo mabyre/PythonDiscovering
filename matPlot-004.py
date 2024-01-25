@@ -1,5 +1,7 @@
 """ Use candlestick_ohlc of mplfinance module
 
+    MatPlotLib used to draw tree graphs H-L, Price and MovingAverage
+
     https://pythonprogramming.net/fill-pruning-matplotlib-tutorial/
 
     Very tuff sample to updated, many problems to solve in compare to the original
@@ -11,7 +13,7 @@
     >pip install mplfinance
 
     Aim is to use candlestick_ohlc to plot a candle stick graph
-
+    
     At boursorama in the stock price graph, there is a download button, 
     this is where I retrieve the data files
 """
@@ -40,7 +42,7 @@ print(plt.__file__)
 
 MA1 = 5
 MA2 = 15
-fileName = r'.\datas\CARMAT_2024-01-16.txt'
+FILE_NAME = r'.\datas\CARMAT_2024-01-16.txt'
 
 compagnyName = 'CARMAT_2024-01-16'
 
@@ -89,7 +91,7 @@ def graph_data(stock):
 
     # Colums you'll find in file
     #
-    date, openp, highp, lowp, closep, volume = numpy.loadtxt(fileName,
+    date, openp, highp, lowp, closep, volume = numpy.loadtxt(FILE_NAME,
                                                              delimiter='\t',
                                                              skiprows=1,  # first line is column's names
                                                              unpack=True,
