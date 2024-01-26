@@ -16,13 +16,26 @@
 """
 import numpy
 
-def moving_average(signal, window, mode='valid'):
+def moving_average(signal, window_size, mode='valid'):
     """ Use convolve to calculate moving average
         Args:
-        - window: is calculate as integral calculation of the function equal to 1
+        - window_size: is calculate as integral calculation of the function equal to 1
           sigma(weights) = 1
     """
-    weights = numpy.repeat(1.0, window)/window
+    weights = numpy.ones(window_size)/window_size
+    nparray_values = numpy.asarray(signal, dtype=float)
+    smas = numpy.convolve(nparray_values, weights, mode)
+    return smas
+
+def moving_average_exp(signal, window_size, mode='valid'):
+    """ Use convolve to calculate moving average with an exponential window
+        Args:
+        - window_size: is calculate as integral calculation of the function equal to 1
+          sigma(weights) = 1
+    """
+    alpha = 0.2 # smoothing factor
+    weights = numpy.exp( -alpha * numpy.arange(window_size) )
+    weights /= weights.sum() # normalize weights for sigma equal to one
     nparray_values = numpy.asarray(signal, dtype=float)
     smas = numpy.convolve(nparray_values, weights, mode)
     return smas

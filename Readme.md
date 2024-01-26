@@ -61,6 +61,13 @@ display a curve read in a **csv file**, use the boursorama data file to display 
 
 <img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matPlot-003.png" alt="using datestr2num converter" height="250" />
 
+### matplot-003-001.py
+
+demonstrate moving average exponential, this indicator gives more importance to the most recent periods. This means that the EMA (exponential moving average) responds more quickly to price movements
+
+<img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matPlot-003-001.png" alt="moving average exponential" height="250" />
+
+
 ## numpySample-001.py
 
 playing with NumPy convolve to calculate moving average 'valid' 'same' and 'full'
