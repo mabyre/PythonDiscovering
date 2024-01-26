@@ -57,7 +57,7 @@ use of **candlestick_ohlc** updated to display financial graphics using matplot 
 
 ## matplot-003.py
 
-use the boursorama data file to display only a graph, show how to use date on x axe
+display a curve read in a **csv file**, use the boursorama data file to display only a graph, show how to use date on x axe, 
 
 <img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matPlot-003.png" alt="using datestr2num converter" height="250" />
 
