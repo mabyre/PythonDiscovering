@@ -1,6 +1,6 @@
 """ matPlot-0xx series will lead us to predictive of linear series
 
-    Using Pandas to read csv file, bytespdate2num no more needed
+    Pandas is better than NumPy to read csv file, bytespdate2num no more needed
 
     # install python 3.11.1
     C:\\Users\\userxxx\\AppData\\Local\\Programs\\Python\\Python311
