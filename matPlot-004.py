@@ -35,7 +35,7 @@ print(plt.__file__)
 # ------------
 # User choices
 # ------------
-# Should be choosen inside signal, means less than over the end
+# Moving average threshold often 10 and 20
 # MA1 = 10
 # MA2 = 30
 # filename = r'.\datas\VALNEVA_2022-11-24.txt'
