@@ -2,7 +2,7 @@
 
     numpy.convolve is used through moving_average
     
-    calculation of moving_average on the tree mode 
+    calculation of moving_average for the tree modes: valid, same, full
 
     https://numpy.org/doc/stable/user/quickstart.html
     https://www.labri.fr/perso/rgiot/cours/anavis/Exercices/
