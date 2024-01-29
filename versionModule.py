@@ -20,7 +20,8 @@ import keras
 print("Keras: " + keras.__version__)
 
 import tensorflow
-print("Tensorflow: " + tensorflow.__version__)
+print( "Tensorflow: " + tensorflow.__version__ )
+print( f"Is GPU available: {tensorflow.test.is_gpu_available()}" )
 
 # import cmake
 # print("cmake: " + cmake.__version__)

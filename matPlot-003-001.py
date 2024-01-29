@@ -20,10 +20,13 @@ style.use('fivethirtyeight')
 print(plt.style.available)
 print(plt.__file__)
 
-TITLE = 'CARMAT_2022'
+TITLE = 'ENGIE'
+
 #FILE_NAME = r'.\datas\VALNEVA_2022-11-24.txt'
 #FILE_NAME = r'.\datas\CARMAT_2022-12-12.txt'
 FILE_NAME = r'.\datas\ENGIE_2024-01-25.txt'
+
+SLIDING_WINDOW_WIDTH = 5
 
 def graph_data(stock):
     """
@@ -45,11 +48,8 @@ def graph_data(stock):
     
     print( f'signal\'s lenght: {len( date )}' )
     
-    plt.plot( date, y_data, color='k', label=f"price" )
-    plt.xticks( rotation = 45 )
-
-    ma1 = dsp.moving_average( y_data, 10 )
-    mae1 = dsp.moving_average_exp( y_data, 10 )
+    ma1 = dsp.moving_average( y_data, SLIDING_WINDOW_WIDTH )
+    mae1 = dsp.moving_average_exp( y_data, SLIDING_WINDOW_WIDTH )
     
     # Reshape
     for x in range( 0, len(date) - len(ma1) ):
@@ -59,9 +59,12 @@ def graph_data(stock):
     for x in range( 0, len(date) - len(mae1) ):
         mae1 = numpy.append(mae1, mae1[len(mae1)-1] )        
     
-    plt.plot( date, ma1, linewidth=2, color='cyan', label=f"mov avg" )
+    # Plot Graphs
+    #
+    plt.plot( date, y_data, color='k', label=f"price" )
+    plt.plot( date, ma1, linewidth=2, color='darkorange', label=f"mov avg" )
     plt.plot( date, mae1, linewidth=2, color='green', label=f"mov avg exp" )
-    
+    plt.xticks( rotation = 45 )
     # Otherwise dates are ploted out of graph
     plt.subplots_adjust( 
         left=0.11, 
@@ -71,7 +74,6 @@ def graph_data(stock):
         wspace=0.2, 
         hspace=0 
     )
-    
     plt.legend()
     plt.show()
 
