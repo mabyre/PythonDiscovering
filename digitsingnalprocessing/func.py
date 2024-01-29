@@ -35,7 +35,23 @@ def moving_average_exp(signal, window_size, mode='valid'):
     """
     alpha = 0.2 # smoothing factor
     weights = numpy.exp( -alpha * numpy.arange(window_size) )
-    weights /= weights.sum() # normalize weights for sigma equal to one
+    weights /= weights.sum() # normalize weights for sigma(weights) equal to one
     nparray_values = numpy.asarray(signal, dtype=float)
     smas = numpy.convolve(nparray_values, weights, mode)
     return smas
+
+def reshape( signal1, signal2 ):
+    """ Make signal2 as long as signal1
+        For moving average function there are values erased
+        to be displayed signal must be reshaped to the lenght
+        of signal1
+    """
+    lg_reshape = len(signal1) - len(signal2)
+    if lg_reshape < 0:
+        print('ERROR: Reshape could \'not be possible!')
+        return False
+    else:
+        s2reshaped = signal2
+        for x in range( 0, lg_reshape ):
+            s2reshaped = numpy.append(s2reshaped, s2reshaped[len(signal2)-1] )
+        return s2reshaped
