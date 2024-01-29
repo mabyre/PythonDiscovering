@@ -18,6 +18,7 @@
     this is where I retrieve the data files
 """
 import numpy
+import digitsingnalprocessing.func as dsp
 import datetime as dt
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
@@ -41,20 +42,13 @@ print(plt.__file__)
 # filename = r'.\datas\VALNEVA_2022-11-24.txt'
 
 MA1 = 5
-MA2 = 15
+MA2 = 10
 FILE_NAME = r'.\datas\CARMAT_2024-01-16.txt'
 
 compagnyName = 'CARMAT_2024-01-16'
 
 
 # ------------
-
-def moving_average(values, window):
-    weights = numpy.repeat(1.0, window)/window
-    asa_values = numpy.asarray(values, dtype=float)
-    smas = numpy.convolve(asa_values, weights, 'valid')
-    return smas
-
 
 def high_minus_low(highs, lows):
     return highs-lows
@@ -111,8 +105,8 @@ def graph_data(stock):
         ohlc.append(append_me)
         x += 1
 
-    ma1 = moving_average(closep, MA1)
-    ma2 = moving_average(closep, MA2)
+    ma1 = dsp.moving_average(closep, MA1)
+    ma2 = dsp.moving_average(closep, MA2)
     start = len(date[MA2-1:])
 
     h_l = list(map(high_minus_low, highp, lowp))
