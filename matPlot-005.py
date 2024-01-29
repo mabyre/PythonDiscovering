@@ -5,7 +5,7 @@
 
     # install
     >pip install scikit-learn
-    NO: >pip install keras tensorFlow will uninstall this version to resintall his own
+    NO: >pip install keras # tensorFlow will uninstall this version to resintall his own
     >pip install tensorflow
     
     Version de Python :3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]
