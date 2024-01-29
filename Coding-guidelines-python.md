@@ -17,7 +17,7 @@ I'd love to don't but small step by small step, I'm adopting ways of writing cod
 
 Aim of **guidelines** is make code readable fastiest as possible. 
 
-When you wrote spcifications you will have some steps to cut your program in small steps. You can retreive this in your comments like numbering the steps.
+When you wrote specifications you will have some steps to cut your program in small steps. You can retreive this in your comments like numbering the steps.
 
 In python syntaxe is done by indentation so let's talking about comment :
 
