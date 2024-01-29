@@ -54,6 +54,6 @@ Here again you separate the step header from the code by a caracter '#"
 # Then a very small step
 ```
 
-Next time i will tald you about paranthesis ...
+Next time i will told you about paranthesis ...
 
 ToBeContinued
