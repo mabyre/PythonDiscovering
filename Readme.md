@@ -12,6 +12,12 @@ Have a look to the section **Installation** in Découvrir-Python.odt
 
 in [matplot-005.py](#matplot-005py) i got serious problems with keras needed to install other version of python language
 
+## Finalized
+
+Thi is the end ... enough for Dicovering Python. May be some more work can be done here but as far as I am concerned I will go further in a private repo you want to know more, join the team we are embarking for AI the intensive use of Keras and Tensorflow to use forecasting as much as possible.
+
+Hope you had fun discovering python
+
 ## matPlot-006.py
 
 pandas is more efficient then numpy to read data frame
