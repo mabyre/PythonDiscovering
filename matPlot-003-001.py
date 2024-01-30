@@ -23,8 +23,8 @@ print(plt.__file__)
 TITLE = 'ENGIE'
 
 #FILE_NAME = r'.\datas\VALNEVA_2022-11-24.txt'
-#FILE_NAME = r'.\datas\CARMAT_2022-12-12.txt'
-FILE_NAME = r'.\datas\ENGIE_2024-01-25.txt'
+FILE_NAME = r'.\datas\CARMAT_2022-12-12.txt'
+#FILE_NAME = r'.\datas\ENGIE_2024-01-25.txt'
 
 SLIDING_WINDOW_WIDTH = 5
 
