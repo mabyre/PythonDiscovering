@@ -142,12 +142,10 @@ def graph_data(stock):
     ax3.plot(date[-start:], ma2[-start:], linewidth=1)
 
     ax3.fill_between(date[-start:], ma2[-start:], ma1[-start:],
-                     where=(ma1[-start:] < ma2[-start:]),
-                     facecolor='r', edgecolor='r', alpha=0.5)
+                     where=(ma1[-start:] < ma2[-start:]), interpolate=True, color='r', alpha=0.3)
 
     ax3.fill_between(date[-start:], ma2[-start:], ma1[-start:],
-                     where=(ma1[-start:] > ma2[-start:]),
-                     facecolor='g', edgecolor='g', alpha=0.5)
+                     where=(ma1[-start:] > ma2[-start:]), interpolate=True, color='g', alpha=0.3)
 
     ax3.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
     ax3.xaxis.set_major_locator(mticker.MaxNLocator(10))
