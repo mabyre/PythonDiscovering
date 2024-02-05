@@ -11,7 +11,7 @@
 #
 import matplotlib.pyplot as plt
 from matplotlib import style
-import digitsingnalprocessing.func as dsp
+import digitsignalprocessing.func as dsp
 
 import numpy
 import pandas

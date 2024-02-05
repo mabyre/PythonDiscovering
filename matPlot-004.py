@@ -18,7 +18,7 @@
     this is where I retrieve the data files
 """
 import numpy
-import digitsingnalprocessing.func as dsp
+import digitsignalprocessing.func as dsp
 import datetime as dt
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates

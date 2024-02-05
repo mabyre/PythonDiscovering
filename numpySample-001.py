@@ -10,7 +10,7 @@
 import numpy
 import pandas
 import matplotlib.pyplot as plt
-import digitsingnalprocessing.func as dsp
+import digitsignalprocessing.func as dsp
 
 # ------------
 # User choices
