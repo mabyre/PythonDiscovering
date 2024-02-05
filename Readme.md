@@ -130,7 +130,9 @@ a way to make a clearScreen, then to print some informations before starting a p
 
 * fundamental package for scientific computing in Python:
   * <https://numpy.org/doc/stable/>
-
+  
+* the mocule mplFinance
+  * https://github.com/matplotlib/mplfinance
 
 # Forecasting: Principles and Practice
 
