@@ -73,6 +73,11 @@ demonstrate moving average exponential, this indicator gives more importance to 
 
 <img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/matPlot-003-001.png" alt="moving average exponential" height="250" />
 
+## test-005
+
+anotation on a graph 
+
+<img style="margin: 10px" src="https://github.com/mabyre/PythonDiscovering/blob/master/images/test-005.png" alt="anotation on a graph" height="250" />
 
 ## numpySample-001.py
 
