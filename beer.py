@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 """
 A Python version of the classic "bottles of beer on the wall" programming
 example.
