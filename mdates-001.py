@@ -27,7 +27,7 @@ days = [
 data1 = [2, 5, 13, 6, 11, 7]
 data2 = [6, 3, 10, 3, 6, 5]
 
-z = datestr2num([
+x_date = datestr2num([
     datetime.strptime(day, '%d/%m/%Y %H:%M').strftime('%m/%d/%Y %H:%M')
     for day in days
 ])
@@ -37,11 +37,11 @@ r = 0.25
 figure = plt.figure(figsize=(8, 4))
 axes = figure.add_subplot(111)
 
-axes.bar(z - r, data1, width=2 * r,
+axes.bar(x_date - r, data1, width=2 * r,
          color='g', align='center',
          tick_label='day')
 
-axes.bar(z + r, data2, width=2 * r,
+axes.bar(x_date + r, data2, width=2 * r,
          color='y', align='center',
          tick_label='day')
 
