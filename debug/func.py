@@ -5,12 +5,13 @@
 import sys
 import builtins
 
-# A function that prints in DEBUG MODE and does nothing otherwise
+# A function that prints in DEBUG MODE
+# does nothing otherwise
 # yes she is making a test 
 # but in python you know 
 # there's no conditionnal compilation 
 # cause there's no compilation
 #
-def print(*args, **kwargs):
+def print( *args, **kwargs ):
     if sys.gettrace() is not None:
-        builtins.print(*args, **kwargs)    
+        builtins.print( *args, **kwargs )

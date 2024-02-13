@@ -1,0 +1,9 @@
+{
+    "parametre1": "valeur1",
+    "parametre2": 42,
+    "parametre3": true,
+    "parametre_tableau": [
+        "chaine1",
+        "chaine2"
+    ]
+}

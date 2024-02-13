@@ -6,6 +6,8 @@
     C:\\Users\\userxxx\\AppData\\Local\\Programs\\Python\\Python311
 
     # install
+    >pip install numpy
+    >pip install pandas
     >pip install scikit-learn
     NO: >pip install keras tensorFlow will uninstall this version to resintall his own
     >pip install tensorflow
@@ -85,17 +87,17 @@ PREDICTION_DAYS = 60
 # Read data in DataFrame df
 df = pandas.read_csv(FILE_NAME, sep='\t', parse_dates=['date'])
 
-date = df['date']
+dates = df['date']
 y_data = df['clot']
 
 # Sanity check
 y = len(df['ouv'])
 print(f'signal weight: {y}')
-assert len(date) == y, "Error in reading file"
+assert len(dates) == y, "Error in reading file"
 
-# ------------
-# Prepare data
-# ------------
+# ---------------------
+# Prepare training data
+# ---------------------
 scaler = MinMaxScaler(feature_range=(0, 1))
 scaled_data = scaler.fit_transform(np.reshape(y_data, (-1, 1)))
 
@@ -187,8 +189,8 @@ print(f"Prediction: {prediction2}")
 # plot the test Predictions
 plt.plot(actual_prices, color='midnightblue', label=f"Actual {COMPAGNY_NAME} price")
 plt.plot(predicted_price, color='green', label=f"Predicted {COMPAGNY_NAME} Price")
-plt.scatter(all_days, prediction2, color='red', label=f"Prediction2", marker='s')
 plt.plot(prediction, color='orangered', label=f"Prediction")
+plt.scatter(all_days, prediction2, color='red', label=f"Prediction2", marker='s')
 plt.title(f"{COMPAGNY_NAME} predic days {PREDICTION_DAYS}")
 plt.xlabel('Days')
 plt.ylabel(f'{COMPAGNY_NAME} share price')
