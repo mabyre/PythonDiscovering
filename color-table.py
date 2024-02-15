@@ -2,7 +2,7 @@
 
     https://matplotlib.org/stable/gallery/color/named_colors.html#css-colors
     Get nice colors for graph
-    
+
     https://matplotlib.org/stable/gallery/color/color_demo.html
     Color Demo
 """
@@ -11,7 +11,7 @@ import math
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 
-import debug.func as dbg
+import debug.func as debug
 
 from matplotlib.patches import Rectangle
 
@@ -26,12 +26,12 @@ def plot_colortable(colors, *, ncols=4, sort_colors=True):
     # Sort colors by hue, saturation, value and name.
     if sort_colors is True:
         names = sorted(
-                colors, key=lambda c: tuple( mcolors.rgb_to_hsv( mcolors.to_rgb(c) ) ) 
+                colors, key=lambda c: tuple( mcolors.rgb_to_hsv( mcolors.to_rgb(c) ) )
             )
     else:
         names = list(colors)
-        
-    dbg.print(names)
+
+    debug.print(names)
 
     n = len(names)
     nrows = math.ceil(n / ncols)
@@ -74,7 +74,7 @@ plot_colortable(mcolors.BASE_COLORS, ncols=3, sort_colors=False)
 # CSS Colors
 plot_colortable(mcolors.CSS4_COLORS)
 
-dbg.print()
+debug.print()
 
 plt.show()
 
