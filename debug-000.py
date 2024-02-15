@@ -49,4 +49,9 @@ if sys.gettrace() is None:
     tracer = trace.Trace(ignoredirs=[sys.prefix, sys.exec_prefix], trace=0, count=1)
     tracer.runfunc(my_function_to_trace, 10, 20)        
 
+# Test Log function
+x = 3
+log = log.Logger()
+log.log("Error:", x, "different de 3")
+
 print( "END OF PYTHON SCRIPT" )
