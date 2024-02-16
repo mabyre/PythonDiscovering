@@ -12,6 +12,8 @@ class User:
     def getName(self):
         print('Hi, I am ', self.name)
 
+    def getAge(self):
+        print(f'I am {self.age} years old' )
 
 class Customer(User):
     is_customer = True
@@ -24,6 +26,7 @@ mathilde = User('Mathilde', 29)
 pierre = Customer('Pierre', 27)
 
 print(pierre.getName())
+print(pierre.getAge())
 
 if pierre.isCustomer():
     print(' and I am a customer')
