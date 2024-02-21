@@ -36,11 +36,12 @@ lines.append(ax.plot(df['Date'], df['Close'], label='Close')[0])
 
 # Ajouter des cases à cocher
 ax_checkbox = plt.axes([0.1, 0.02, 0.3, 0.15], facecolor='lightgoldenrodyellow') # (left, bottom, width, height)
-checkbox = CheckButtons(ax_checkbox, ['Open', 'High', 'Low', 'Close'], (True, True, True, True))
+check_box_labels = ['Open', 'High', 'Low', 'Close']
+checkbox = CheckButtons(ax_checkbox, check_box_labels, (True, True, True, True))
 
 # Fonction pour gérer la visibilité des lignes en fonction des cases à cocher
 def update_visibility(label):
-    index = ['Open', 'High', 'Low', 'Close'].index(label)
+    index = check_box_labels.index(label)
     lines[index].set_visible(not lines[index].get_visible())
     plt.draw()
 

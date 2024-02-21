@@ -1,15 +1,15 @@
 import os
-import debug.func as dbg
+import debug.func as debug
 import json
 
 def read_configuration( file_name ):
-    dbg.print( 'Config file:', os.path.abspath(file_name) )
+    debug.print( 'Config file:', os.path.abspath(file_name) )
     try:
         with open( file_name, 'r' ) as fichier:
             configuration = json.load(fichier)
         return configuration
     except FileNotFoundError:
-        print("Configuration file \'config.json\' not found.")
+        print("Configuration file not found.")
         return None
     except json.JSONDecodeError:
         print("ERROR: JSON decoding error in configuration file.")

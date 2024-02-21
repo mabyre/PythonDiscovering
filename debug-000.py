@@ -14,6 +14,7 @@
 import sys
 import trace
 import debug.func as debug
+import logger
 
 # ----------------------------------------------------------------
 
@@ -51,7 +52,10 @@ if sys.gettrace() is None:
 
 # Test Log function
 x = 3
-log = log.Logger()
-log.log("Error:", x, "different de 3")
+log = logger.Logger()
+log.print("Error:", x, "different de 3")
+
+log = logger.Logger()
+log.print("Error:", x, "different de 3")
 
 print( "END OF PYTHON SCRIPT" )
