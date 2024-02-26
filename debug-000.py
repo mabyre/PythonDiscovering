@@ -11,6 +11,7 @@
     http://pydev.blogspot.com/2007/06/why-cant-pydev-debugger-work-with.html
     to see how to restore the debug tracing back correctly.
 """
+import os
 import sys
 import trace
 import debug.func as debug
@@ -58,4 +59,27 @@ log.print("Error:", x, "different de 3")
 log = logger.Logger()
 log.print("Error:", x, "different de 3")
 
+# ----------------------------------------------------------------
+# We are in debug or not 
+# ----------------------------------------------------------------
+
+mode_debug = os.environ.get('DEBUG', '0') == '1'
+
+if mode_debug:
+    print("We are in DEBUG mode")
+else:
+    print("We are NOT in DEBUG mode")
+
+# Flag DEBUG
+if sys.flags.debug:
+    print("Mode DEBUG is activated.")
+else:
+    print("Mode DEBUG is NOT activated.")
+    
+if sys.gettrace() is None:
+    print("Aucun débogueur n'est attaché.")
+else:
+    print("Un débogueur est attaché.")
+
+# ----------------------------------------------------------------
 print( "END OF PYTHON SCRIPT" )
