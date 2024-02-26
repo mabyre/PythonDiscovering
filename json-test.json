@@ -1,0 +1,14 @@
+[
+	{
+		"NAME": "Item1",
+		"nombre_scientifique": 2.25e+06
+	},
+	{
+		"NAME": "Item2",
+		"nombre_scientifique": 99999
+	},
+	{
+		"NAME": "AddItem",
+		"nombre_scientifique": "3.25e+09"
+	}
+]
