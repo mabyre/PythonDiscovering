@@ -1,10 +1,11 @@
-""" L'ojectif c'est de lire écire un nombre scientifique depuis un JSon
-	Le problème avec le format décimal
+""" L'ojectif c'est de lire/écire un nombre scientifique depuis un JSon
+	Le format décimal n'est pas facile à lire par l'humain: '1000000000'
 
-	Copilot : Si vous voulez écrire un nombre en notation scientifique dans un fichier JSON à l’aide de Python,
+	Copilot : Lors de l'écriture les nombres sont convertis en notation décimale ...
+ 	Si vous voulez écrire un nombre en notation scientifique dans un fichier JSON à l’aide de Python,
  	vous pouvez le faire en le stockant comme une chaîne de caractères.
 
-	L'utilisateur doit pouvoir écrire le nombre de façon scientifique dans le JSon
+	L'utilisateur doit pouvoir écrire le nombre de façon scientifique dans le JSon soit en str soit en float
 	Copilot propose de faire .replace(".", ",")  à chaque fois mais moi je mets toujours un '.' à la place de la ','
 
 	write_json_file filter to have reading string in JSon
@@ -35,10 +36,10 @@ class ScientificNotationEncoder(json.JSONEncoder):
 # ----------------------------------------------------------------------------
 
 def _filter_read_list( item_list ):
-		for item in item_list:
-			if isinstance(item["nombre_scientifique"], str):
-				# Convert string to number
-				item["nombre_scientifique"] = float( item["nombre_scientifique"] )
+	for item in item_list:
+		if isinstance(item["nombre_scientifique"], str):
+			# Convert string to number
+			item["nombre_scientifique"] = float( item["nombre_scientifique"] )
     
 def read_json_file():
 	try:
@@ -55,7 +56,7 @@ def read_json_file():
 def _filter_write_list( item_list ):
 	# filter nombre_scientifique avant d'écrire
 	for item in item_list:
-		if abs(item["nombre_scientifique"]) > 1e+6 > isinstance(item["nombre_scientifique"], (int, float)):
+		if abs( item["nombre_scientifique"] ) > 1e+6 > isinstance(item["nombre_scientifique"], (int, float)):
 			# Convert number into string
 			item["nombre_scientifique"] = "{:.2e}".format(item["nombre_scientifique"])
    
